@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  .nav { display: none; }
+  .hero-content { margin-left: 24px; padding: 60px 24px; }
+  .hero-content h1 { font-size: 2rem; }
+  .spotlight-grid, .involve-grid, .stories-grid { grid-template-columns: 1fr; }
+  .header-inner { gap: 16px; }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .header-ctas .btn-sponsor { display: none; }
+  .footer-inner { grid-template-columns: 1fr; }
+}

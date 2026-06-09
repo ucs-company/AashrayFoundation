@@ -1,0 +1,157 @@
+.medical-page {
+  background: #fff;
+}
+
+/* HERO */
+
+.medical-hero {
+  height: 75vh;
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("/images/medical-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.medical-overlay {
+  width: 100%;
+}
+
+.medical-hero-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+  color: #fff;
+}
+
+.medical-hero-content span {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.medical-hero-content h1 {
+  font-size: 4rem;
+  margin: 15px 0;
+  max-width: 700px;
+  line-height: 1.1;
+}
+
+.medical-hero-content p {
+  max-width: 650px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* INTRO */
+
+.medical-intro {
+  padding: 90px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+.medical-intro h2,
+.medical-mission h2,
+.medical-impact h2,
+.medical-cta h2 {
+  font-size: 2.6rem;
+  margin-bottom: 25px;
+}
+
+.medical-intro p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* MISSION */
+
+.medical-mission {
+  background: #f8f8f8;
+  padding: 90px 0;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.mission-card {
+  background: white;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.mission-card h3 {
+  margin-bottom: 15px;
+}
+
+.mission-card p {
+  line-height: 1.8;
+  color: #666;
+}
+
+/* IMPACT */
+
+.medical-impact {
+  padding: 90px 0;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.impact-grid div {
+  padding: 30px;
+  border-left: 4px solid #da291c;
+}
+
+.impact-grid h3 {
+  margin-bottom: 10px;
+}
+
+/* CTA */
+
+.medical-cta {
+  background: #da291c;
+  color: white;
+  text-align: center;
+  padding: 90px 0;
+}
+
+.medical-cta p {
+  max-width: 700px;
+  margin: 20px auto;
+  line-height: 1.8;
+}
+
+.medical-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: white;
+  color: #da291c;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.medical-btn:hover {
+  opacity: .9;
+}
