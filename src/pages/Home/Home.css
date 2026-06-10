@@ -1,3 +1,11 @@
+.body {
+  background : #eff3ff;
+}
+
+
+
+
+
 .mission {
   background: var(--red);
   color: #fff;
@@ -17,7 +25,7 @@
 /* ///////////////////////////////////////////////// */
 /* hero-final */
 .hero-slider {
-  background: #fff;
+  background:  #eff3ff;
   padding: 20px 20px;
   display: flex;
   justify-content: center;
@@ -28,7 +36,7 @@
   position: relative;
   width: 90%;
   max-width: 1000px;
-  height: 350px;
+  height: 520px;
 
   overflow: hidden;
 
@@ -126,22 +134,19 @@
 /* * SPOTLIGHT */ 
 .title-badge {
   display: inline-block;
-  background: #f4c430;   /* yellow badge */
-  color: #000;
-  padding: 8px 18px;
-  border-radius:  0px 50px 0px 50px;
-
+  color: #fff;
+  /* padding: 8px 18px; */
+  /* border-radius:  0px 50px 0px 50px; */
   font-size: 1.2rem;
   font-weight: 500;
-
   text-align: center;
 }
 
 
 /* FULL OUTER SECTION */
 .spotlight-wrapper {
-  background: #fff;
-  padding: 20px 20px;
+  background:  #eff3ff;
+  padding: 0px 20px;
 }
 
 /* TITLE */
@@ -164,11 +169,11 @@
   max-width: 1300px;
   margin: auto;
 
-  background: #d8f2fc;
+  background: #c6dbef;
 
-  border-radius: 0px 120px 0px 80px;
+  border-radius: 60px 0px 60px 0px;
 
-  padding: 40px;
+  padding: 80px;
 
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
@@ -212,7 +217,7 @@
 }
 
 .spotlight-card {
-  background:  transparent;
+  background:  #fff;
   padding: 18px;
   border-radius: 0px;
   transition: .4s;

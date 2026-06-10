@@ -86,7 +86,7 @@ function Home() {
 
             <div className="hero-buttons">
               <a href="#" className="btn-primary">Donate Now</a>
-              <a href="#" className="btn-secondary">Learn More</a>
+              {/* <a href="#" className="btn-secondary">Learn More</a> */}
             </div>
           </div>
         </div>

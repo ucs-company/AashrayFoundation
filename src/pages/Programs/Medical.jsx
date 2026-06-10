@@ -12,79 +12,75 @@ export default function Medical() {
 
       {/* <h1>Project LIFE-LINE</h1> */}
 
-      <div className="hero-buttons">
+      {/* <div className="hero-buttons">
         <a href="/donate" className="btn-primary">
           Donate Now
         </a>
-      </div>
+      </div> */}
 
     </div>
 
   </div>
   </section>
 
-    <section className="image-content">
-  <div className="container image-grid">
+    {/* SECTION 1 */}
+<section className="medical-section">
+  <div className="container medical-grid">
 
-    <div className="image-box">
-      <img
-        src="/images/medical/img2.jpeg"
-        alt="Medical Support"
-      />
+    <div className="medical-image">
+      <img src="/images/medical/img2.jpeg" alt="Medical Support" />
     </div>
 
-    <div className="content-box">
-
+    <div className="medical-content">
       <span>PROJECT LIFE-LINE</span>
-
       <h2>Every Heartbeat Matters</h2>
 
       <p>
         At AFLF, we believe that every child deserves a chance to live a healthy
-        and fulfilling life. Project LIFE-LINE is dedicated to supporting
-        children and individuals who require urgent medical care but cannot
-        afford life-saving treatment.
+        and fulfilling life. Project LIFE-LINE is dedicated to supporting children
+        and individuals who require urgent medical care but cannot afford life-saving treatment.
       </p>
 
       <p>
-        Through community support and compassionate action, we help provide
-        surgeries, healthcare assistance, and renewed hope to those facing
-        critical medical challenges.
+        Through community support and compassionate action, we help provide surgeries,
+        healthcare assistance, and renewed hope to those facing critical medical challenges.
       </p>
-
     </div>
 
   </div>
 </section>
 
-      <section className="image-content">
-  <div className="container image-grid">
 
-    {/* <div className="image-box">
-      <img
-        src="/images/medical/img2.jpeg"
-        alt="Child Care"
-      />
-    </div> */}
+{/* SECTION 2 (REVERSED) */}
+<section className="medical-section reverse">
+  <div className="container medical-grid">
 
-    <div className="content-box">
+        <div className="medical-image">
+      <img src="/images/medical/img2.jpeg" alt="Child Care" />
+    </div>
+
+
+
+    <div className="medical-content">
       <span>OUR PURPOSE</span>
       <h2>Saving Children's Lives</h2>
 
       <p>
-        Every child deserves access to healthcare regardless of financial
-        circumstances. Through Project LIFE-LINE we support surgeries,
-        treatments and medical interventions that save lives.
+        Every child deserves access to healthcare regardless of financial circumstances.
+        Through Project LIFE-LINE we support surgeries, treatments and medical interventions
+        that save lives.
       </p>
     </div>
-    <div className="image-box">
-      <img
-        src="/images/medical/img2.jpeg"
-        alt="Child Care"
-      />
-    </div>
+
+    {/* <div className="medical-image">
+      <img src="/images/medical/img2.jpeg" alt="Child Care" />
+    </div> */}
+
   </div>
 </section>
+
+
+
 
       {/* Mission Cards */}
       <section className="medical-mission">
@@ -159,11 +155,7 @@ export default function Medical() {
 
 
 
-      <section className="impact-banner">
-
-
-       
-
+  <section className="impact-banner">
   <div className="impact-item">
     <h3>500+</h3>
     <p>Lives Impacted</p>
