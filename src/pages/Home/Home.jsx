@@ -1,10 +1,10 @@
 import { useEffect} from "react";
 import Hero from "../../components/Hero/Hero";
-import Gallery from "../../components/Gallery/Gallery";
 import Button from "../../components/Common/Button";
 import galleryData from "../../data/galleryData";
 import programsData from "../../data/programsData";
 import PlanCanadaSection from "../../components/Common/PlanCanadaSection ";
+import Partners from "../../components/Partners/Partners";
 import "./Home.css";
 
 const stories = [
@@ -65,23 +65,6 @@ function Home() {
         btn.style.background = "";
       }, 3000);
     }
-
-    const [startIndex, setStartIndex] = useState(0);
-
-const nextLogos = () => {
-  setStartIndex((prev) =>
-    prev + 5 >= partnerLogos.length ? 0 : prev + 5
-  );
-};
-
-const prevLogos = () => {
-  setStartIndex((prev) =>
-    prev - 5 < 0 ? Math.max(partnerLogos.length - 5, 0) : prev - 5
-  );
-};
-
-const visibleLogos = partnerLogos.slice(startIndex, startIndex + 5);
-
 
   };
 
@@ -200,13 +183,39 @@ const visibleLogos = partnerLogos.slice(startIndex, startIndex + 5);
         </div>
 
         <div className="spotlight-content">
-          <Gallery items={galleryData} type="spotlight" />
+          <div className="spotlight-track-wrapper">
+            <div className="spotlight-track">
+              <div className="spotlight-track-inner">
+                {galleryData.map((item) => (
+                  <div key={item.id} className="spotlight-card">
+                    <img src={item.image} alt={item.title} />
+                    <div className="spotlight-text">
+                      <h3>{item.title}</h3>
+                      <p>{item.description}</p>
+                      <Button variant="link">Learn more &rarr;</Button>
+                    </div>
+                  </div>
+                ))}
+                {galleryData.map((item) => (
+                  <div key={`dup-${item.id}`} className="spotlight-card">
+                    <img src={item.image} alt={item.title} />
+                    <div className="spotlight-text">
+                      <h3>{item.title}</h3>
+                      <p>{item.description}</p>
+                      <Button variant="link">Learn more &rarr;</Button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <PlanCanadaSection />
 
-      
+      <Partners />
+
       {/* STORIES
       <section className="stories">
         <div className="container">

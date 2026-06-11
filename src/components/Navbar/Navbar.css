@@ -62,7 +62,6 @@
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-
 /* DESKTOP NAV */
 .nav {
   display: flex;
@@ -295,6 +294,14 @@
 
 .hamburger:active {
   transform: scale(0.95);
+}
+.gButton {
+background: #2e2c8a;
+  color: #fff;
+  padding: 8px 18px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 4px;
 }
 
 .hamburger span {

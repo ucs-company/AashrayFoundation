@@ -15,6 +15,7 @@ import Orphanage from '../pages/Programs/Orphanage';
 import OldAgeHome from '../pages/Programs/OldAgeHome';
 import PashuPremi from '../pages/Programs/PashuPremi';
 import MedicalSupport from '../pages/Appeals/AppealsMedical';
+import ContactUs from '../pages/Contact/Contact'
 // import Appealsfoodgrains from '../pages/Appeals/Appealsfoodgrains';
 // import Appealseducation from '../pages/Appeals/Appealseducation';
 
@@ -23,6 +24,8 @@ function AppRoutes() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
+      <Route path="/ContactUs" element={<ContactUs />} />
+
       <Route path="/programs" element={<Programs />} />
       <Route path="/programs/medical" element={<Medical />} />
       <Route path="/programs/education" element={<Education />} />
