@@ -365,7 +365,7 @@ export default function PlanCanadaSection() {
                     height: 210,
                     borderRadius: "50%",
                     objectFit: "cover",
-                    border: "5px solid #0072CE",
+                    border: "5px solid #4a6fa5",
                     marginBottom: 14,
                   }}
                 />

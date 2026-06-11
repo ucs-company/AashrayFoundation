@@ -161,7 +161,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0;
-  color: #111;
+  color: #4a6fa5;
 }
 
 /* GALLERY AREA */
@@ -241,17 +241,17 @@
 .spotlight-card h3,
 .spotlight-card h4 {
   margin: 15px 0;
-  color: #1f2f46;
+  color: #4a6fa5;
 }
 
 .spotlight-card p {
-  color: #666;
+  color: #000;
   line-height: 1.6;
 }
 
 .spotlight-card button {
   margin-top: 15px;
-  background: #0076e5;
+  background: #2e2c8a;
   color: white;
   border: none;
   padding: 10px 22px;
@@ -260,7 +260,8 @@
 }
 
 .spotlight-card button:hover {
-  background: #005dc1;
+  background: #4a6fa5;
+  color: white;
 }
  
 

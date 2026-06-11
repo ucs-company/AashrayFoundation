@@ -30,13 +30,13 @@ const MedicalSupport = () => {
       {/* HERO SECTION */}
       <section className="medical-hero">
         <div className="overlay">
-          <h4>Medical Support</h4>
+          {/* <h4>Medical Support</h4>
           <h1>Project LIFE-LINE – Saving Lives</h1>
           <p>
             Every heartbeat matters. Through Project LIFE-LINE, we support
             children and individuals who need urgent, life-saving medical care
             but cannot afford it.
-          </p>
+          </p> */}
         </div>
       </section>
 
@@ -102,14 +102,7 @@ const MedicalSupport = () => {
         </div>
       </section>
 
-      {/* CALL TO ACTION */}
-      <section className="cta">
-        <h2>One Donation Can Save a Life</h2>
-        <p>
-          Your support can turn a critical moment into a second chance at life.
-        </p>
-        <button>Support LIFE-LINE</button>
-      </section>
+   
 
     </div>
   );

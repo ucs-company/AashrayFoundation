@@ -75,7 +75,7 @@ const galleryData = [
   {
     id: 1,
     title: "Vidhyalay",
-    image: '/images/gallery/vidhyalay1.jpg',
+    image: '/images/gallery/school1.jpg',
     description: "We ensure quality education for every child.",
     link: '#',
   },
@@ -83,36 +83,41 @@ const galleryData = [
   {
     id: 2,
     title: "Nari Tarang",
-    image: "/images/gallery/nari1.jpg",
+    image: "/images/gallery/naritarang1.jpg",
     description: "Empowering women with skills and confidence.",
+    link: '#',
   },
 
   {
     id: 3,
     title: "Zero Hunger Drive",
-    image: "/images/gallery/hunger1.jpg",
+    image: "/images/gallery/hunger5.jpg",
     description: "No one should sleep hungry.",
+    link: '#',
   },
 
   {
     id: 4,
     title: "Jal",
-    image: "/images/gallery/jal1.jpg",
+    image: "/images/gallery/jal7.jpg",
     description: "Clean water for healthy life.",
+    link: '#',
   },
 
   {
     id: 5,
     title: "Ashray Ka Aashra",
-    image: "/images/gallery/sahara1.jpg",
+    image: "/images/gallery/aka3.jpg",
     description: "Care and hope for orphan children.",
+    link: '#',
   },
 
   {
     id: 6,
     title: "Life-Line",
-    image: "/images/gallery/sahara1.jpg",
+    image: "/images/gallery/life1.jpg",
     description: "Life-saving medical support.",
+    link: '#',
   },
 
   {
@@ -120,13 +125,15 @@ const galleryData = [
     title: "Sahara",
     image: "/images/gallery/sahara1.jpg",
     description: "Dignity and care for elders.",
+    link: '#',
   },
 
   {
     id: 8,
     title: "Pashupremi",
-    image: "/images/gallery/sahara1.jpg",
+    image: "/images/gallery/pashu1.jpg",
     description: "Compassion for Every Paw.",
+    link: '#',
   },
 ];
 

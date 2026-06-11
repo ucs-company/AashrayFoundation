@@ -1,120 +1,222 @@
+/* PAGE */
 .medical-page {
+  width: 100%;
   background: #eff3ff;
-  font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
-/* HERO */
+/* HERO SECTION */
 .medical-hero {
-  height: 60vh;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("/images/medical-hero.jpg") center/cover no-repeat;
+  width: 90%;
+  max-width: 1300px;
+  height: 550px;
+  margin: 40px auto;
+  border-radius: 80px 0 80px 0;
+  overflow: hidden;
+
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("/images/medical/img6.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
 }
 
-.medical-hero h1 {
-  font-size: 42px;
-  color: #f5a623;
-}
-
-.medical-hero h4 {
-  letter-spacing: 2px;
+.overlay {
+  max-width: 650px;
+  padding: 60px;
   color: #fff;
 }
 
-/* SECTIONS */
-/* section {
-  padding: 60px 10%;
-} */
+.overlay h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+.overlay h1 {
+  font-size: 52px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 18px;
+  line-height: 1.8;
+}
 
 /* ABOUT */
-.medical-about h2,
-.medical-mission h2,
-.appeal-section h2 {
-  color: #1c2b4a;
-  margin-bottom: 15px;
+.medical-about {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 50px;
+  border-radius: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.medical-about h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #0f172a;
 }
 
 .medical-about p {
-  color: #444;
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #555;
 }
 
 /* MISSION */
+.medical-mission {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.medical-mission h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: #0f172a;
+}
+
 .mission-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
 
 .mission-box {
   background: #fff;
-  padding: 25px;
-  border-left: 5px solid #f5a623;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  padding: 35px;
+  border-radius: 35px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
 }
 
-/* CARDS */
+.mission-box:hover {
+  transform: translateY(-8px);
+}
+
+.mission-box h3 {
+  margin-bottom: 15px;
+  color: #0f172a;
+}
+
+.mission-box p {
+  color: #555;
+  line-height: 1.8;
+}
+
+/* APPEALS */
+.appeal-section {
+  width: 90%;
+  max-width: 1300px;
+  margin: 70px auto;
+}
+
+.appeal-section h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: #0f172a;
+}
+
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
 
 .card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  border-top: 4px solid #f5a623;
+  background: white;
+  padding: 30px;
+  border-radius: 40px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
 }
 
-.card h3 {
-  margin-bottom: 10px;
-  color: #1c2b4a;
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card-header h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #0f172a;
 }
 
 .cost {
-  font-weight: bold;
-  color: #f5a623;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 15px;
 }
 
 .desc {
-  margin: 10px 0;
   color: #555;
+  line-height: 1.8;
+  margin-bottom: 25px;
 }
 
 .donate-btn {
-  background: #f5a623;
-  color: #fff;
+  background: #2e2c8a;
+  color: white;
   border: none;
-  padding: 10px 15px;
-  border-radius: 6px;
+  padding: 14px 28px;
+  border-radius: 50px;
   cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-/* CTA */
-.cta {
-  text-align: center;
-  background: #1c2b4a;
-  color: #fff;
+.donate-btn:hover {
+  transform: scale(1.05);
 }
 
-.cta h2 {
-  color: #f5a623;
+
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .mission-grid,
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .overlay h1 {
+    font-size: 38px;
+  }
+
+  .medical-hero {
+    height: auto;
+    min-height: 450px;
+  }
 }
 
-.cta button {
-  margin-top: 15px;
-  background: #f5a623;
-  border: none;
-  padding: 12px 25px;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 6px;
+@media (max-width: 768px) {
+  .overlay {
+    padding: 30px;
+  }
+
+  .overlay h1 {
+    font-size: 30px;
+  }
+
+  .medical-about,
+  .mission-box,
+  .card {
+    border-radius: 25px;
+  }
+
+  .medical-hero {
+    border-radius: 40px 0 40px 0;
+  }
 }
