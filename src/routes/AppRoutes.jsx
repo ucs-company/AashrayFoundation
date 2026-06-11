@@ -11,6 +11,9 @@ import Education from '../pages/Programs/Education';
 import HungerDrive from '../pages/Programs/HungerDrive';
 import JalProject from '../pages/Programs/JalProject';
 import WomenEmpowerment from '../pages/Programs/WomenEmpowerment';
+import Orphanage from '../pages/Programs/Orphanage';
+import OldAgeHome from '../pages/Programs/OldAgeHome';
+import PashuPremi from '../pages/Programs/PashuPremi';
 import MedicalSupport from '../pages/Appeals/AppealsMedical';
 // import Appealsfoodgrains from '../pages/Appeals/Appealsfoodgrains';
 // import Appealseducation from '../pages/Appeals/Appealseducation';
@@ -26,8 +29,9 @@ function AppRoutes() {
       <Route path="/programs/women-empowerment" element={<WomenEmpowerment />} />
       <Route path="/programs/zero-hunger-drive" element={<HungerDrive />} />
       <Route path="/programs/jal-project" element={<JalProject />} />
-      <Route path="/programs/orphanage" element={<Programs />} />
-      <Route path="/programs/old-age-home" element={<Programs />} />
+      <Route path="/programs/orphanage" element={<Orphanage />} />
+      <Route path="/programs/old-age-home" element={<OldAgeHome />} />
+      <Route path="/programs/pashu-premi" element={<PashuPremi />} />
 
       {/* APPEALS */}
       <Route path="/Appeals/Medical" element={<MedicalSupport />} />

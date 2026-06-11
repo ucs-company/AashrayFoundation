@@ -167,20 +167,6 @@ export default function HungerDrive() {
           </div>
         </div>
       </section>
-
-      {/* <section className="hunger-cta">
-        <div className="container">
-          <h2>Join the Fight Against Hunger</h2>
-          <p>
-            Your support can provide a meal, bring hope, and save a life. Together, we can ensure
-            that no one in Mumbai's slums goes to bed hungry.
-          </p>
-          <div className="hunger-cta-buttons">
-            <a href="/donate" className="hunger-btn hunger-btn-primary">Donate Now</a>
-            <a href="/volunteer" className="hunger-btn hunger-btn-outline">Volunteer With Us</a>
-          </div>
-        </div>
-      </section> */}
     </div>
   );
 }

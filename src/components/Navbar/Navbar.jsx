@@ -16,19 +16,22 @@ const navLinks = [
       { label: 'Orphanage', path: '/programs/orphanage' },
       { label: 'Medical (Life-Line)', path: '/programs/medical' },
       { label: 'Old Age Home (Sahara)', path: '/programs/old-age-home' },
+      { label: 'Pashu Premi', path: '/programs/pashu-premi' },
     ],
   },
-   { label: 'Appeals', path: '/Appeals',
-      dropdown: [
-      { label: 'Medical', path: '/Appeals/Medical' },
-      { label: 'Education', path: '/Appeals/Appeals-education' },
-      { label: 'Food Grains', path: '/Appeals/Appeals-food-grains' },
-    ],
-   },
+  //  { label: 'Appeals', path: '/Appeals',
+  //     dropdown: [
+  //     { label: 'Medical', path: '/Appeals/Medical' },
+  //     { label: 'Education', path: '/Appeals/Appeals-education' },
+  //     { label: 'Food Grains', path: '/Appeals/Appeals-food-grains' },
+  //   ],
+  //  },
 
   { label: 'Gallery', path: '/gallery' },
   { label: 'Get Involved', path: '/volunteer' },
   // { label: 'Ways to Give', path: '/donate' },
+  { label: 'Contact Us', path: '/about' },
+
 ];
 
 function Navbar() {

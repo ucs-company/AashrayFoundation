@@ -55,7 +55,7 @@
   font-size: 0.85rem;
   margin-bottom: 16px;
   opacity: 0;
-  animation: fadeSlideUp 0.8s ease 0.2s forwards;
+  animation: hungerFadeSlideUp 0.8s ease 0.2s forwards;
 }
 
 .hunger-hero-content h1 {
@@ -64,7 +64,7 @@
   color: #fff;
   margin-bottom: 20px;
   opacity: 0;
-  animation: fadeSlideUp 0.8s ease 0.4s forwards;
+  animation: hungerFadeSlideUp 0.8s ease 0.4s forwards;
 }
 
 .hunger-hero-content p {
@@ -73,10 +73,10 @@
   line-height: 1.8;
   max-width: 600px;
   opacity: 0;
-  animation: fadeSlideUp 0.8s ease 0.6s forwards;
+  animation: hungerFadeSlideUp 0.8s ease 0.6s forwards;
 }
 
-@keyframes fadeSlideUp {
+@keyframes hungerFadeSlideUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
@@ -329,83 +329,6 @@
   .hunger-stats-grid { gap: 20px; }
 }
 
-/* ===== STATS COUNTER PULSE ===== */
-.hunger-stat-number {
-  position: relative;
-  display: inline-block;
-  animation: countPulse 2s ease-in-out infinite;
-}
-
-.hunger-stat:nth-child(2) .hunger-stat-number { animation-delay: 0.5s; }
-.hunger-stat:nth-child(3) .hunger-stat-number { animation-delay: 1s; }
-.hunger-stat:nth-child(4) .hunger-stat-number { animation-delay: 1.5s; }
-
-@keyframes countPulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.08); }
-}
-
-/* ===== CTA ===== */
-.hunger-cta {
-  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 50%, #4a6fa5 100%);
-  color: #fff;
-  padding: 80px 0;
-  text-align: center;
-}
-
-.hunger-cta h2 {
-  font-size: 2.8rem;
-  margin-bottom: 20px;
-}
-
-.hunger-cta p {
-  max-width: 700px;
-  margin: 0 auto 36px;
-  line-height: 1.9;
-  font-size: 1.05rem;
-  opacity: 0.9;
-}
-
-.hunger-cta-buttons {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.hunger-btn {
-  display: inline-block;
-  padding: 14px 32px;
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.hunger-btn-primary {
-  background: #2e2c8a;
-  color: #fff;
-  border: 2px solid #fff;
-}
-
-.hunger-btn-primary:hover {
-  background: #3d3a9e;
-  transform: translateY(-2px);
-}
-
-.hunger-btn-outline {
-  border: 2px solid #fff;
-  color: #fff;
-  background: transparent;
-}
-
-.hunger-btn-outline:hover {
-  background: #fff;
-  color: #1a1a2e;
-  transform: translateY(-2px);
-}
-
 @media (max-width: 768px) {
   .hunger-overlay { height: 450px; border-radius: 0px 60px 0px 40px; }
   .hunger-hero-content { padding: 0 30px; }
@@ -415,7 +338,4 @@
   .hunger-mission h2 { font-size: 2rem; }
   .hunger-impact-content h2 { font-size: 1.8rem; }
   .hunger-gallery-grid { grid-template-columns: 1fr; }
-  .hunger-bowl-decoration { display: none; }
-  .hunger-cta { padding: 60px 24px; }
-  .hunger-cta h2 { font-size: 2rem; }
 }

@@ -26,7 +26,7 @@
   height: 520px;
   overflow: hidden;
   border-radius: 120px 0px 80px 0px;
-  background: linear-gradient(135deg, #0a4b7a 0%, #1a7a9e 50%, #4db8c7 100%);
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 50%, #4a6fa5 100%);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
@@ -95,7 +95,7 @@
 
 .jal-intro-text h2 {
   font-size: 2.8rem;
-  color: #1a7a9e;
+  color: #4a6fa5;
   margin-bottom: 20px;
   line-height: 1.2;
 }
@@ -108,14 +108,14 @@
 }
 
 .jal-intro-text strong {
-  color: #0a4b7a;
+  color: #1a1a2e;
 }
 
 .jal-quote {
   font-style: italic;
-  color: #1a7a9e !important;
+  color: #4a6fa5 !important;
   font-weight: 600;
-  border-left: 4px solid #1a7a9e;
+  border-left: 4px solid #4a6fa5;
   padding-left: 20px;
   margin-top: 20px;
 }
@@ -141,7 +141,7 @@
 .jal-mission h2 {
   text-align: center;
   font-size: 2.8rem;
-  color: #1a7a9e;
+  color: #4a6fa5;
   margin-bottom: 10px;
 }
 
@@ -152,7 +152,7 @@
 }
 
 .jal-mission-card {
-  background: linear-gradient(135deg, #0a4b7a 0%, #1a7a9e 100%);
+  background: #4a6fa5;
   padding: 40px 35px;
   border-radius: 60px 0px 60px 0px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -160,7 +160,7 @@
 
 .jal-mission-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(26, 122, 158, 0.3);
+  box-shadow: 0 16px 40px rgba(74, 111, 165, 0.3);
 }
 
 .jal-mission-icon {
@@ -196,7 +196,7 @@
 
 .jal-impact-content h2 {
   font-size: 2.5rem;
-  color: #1a7a9e;
+  color: #4a6fa5;
   margin-bottom: 24px;
 }
 
@@ -239,7 +239,7 @@
   display: block;
   font-size: 2.8rem;
   font-weight: 800;
-  color: #1a7a9e;
+  color: #4a6fa5;
   margin-bottom: 6px;
 }
 
@@ -258,7 +258,7 @@
 .jal-gallery h2 {
   text-align: center;
   font-size: 2.5rem;
-  color: #1a7a9e;
+  color: #4a6fa5;
   margin-bottom: 10px;
 }
 
@@ -309,7 +309,7 @@
 }
 
 .jal-cta {
-  background: linear-gradient(135deg, #0a4b7a 0%, #1a7a9e 50%, #4db8c7 100%);
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 50%, #4a6fa5 100%);
   color: #fff;
   padding: 80px 0;
   text-align: center;
@@ -364,7 +364,7 @@
 
 .jal-btn-outline:hover {
   background: #fff;
-  color: #0a4b7a;
+  color: #1a1a2e;
   transform: translateY(-2px);
 }
 

@@ -26,7 +26,7 @@
   height: 520px;
   overflow: hidden;
   border-radius: 120px 0px 80px 0px;
-  background: linear-gradient(135deg, #8e0e4a 0%, #c2185b 50%, #e85d8a 100%);
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 50%, #4a6fa5 100%);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
@@ -94,7 +94,7 @@
 
 .womens-intro-text h2 {
   font-size: 2.8rem;
-  color: #c2185b;
+  color: #4a6fa5;
   margin-bottom: 20px;
   line-height: 1.2;
 }
@@ -107,14 +107,14 @@
 }
 
 .womens-intro-text strong {
-  color: #8e0e4a;
+  color: #1a1a2e;
 }
 
 .womens-quote {
   font-style: italic;
-  color: #c2185b !important;
+  color: #4a6fa5 !important;
   font-weight: 600;
-  border-left: 4px solid #c2185b;
+  border-left: 4px solid #4a6fa5;
   padding-left: 20px;
   margin-top: 20px;
 }
@@ -140,7 +140,7 @@
 .womens-focus h2 {
   text-align: center;
   font-size: 2.8rem;
-  color: #c2185b;
+  color: #4a6fa5;
   margin-bottom: 10px;
 }
 
@@ -151,7 +151,7 @@
 }
 
 .womens-focus-card {
-  background: linear-gradient(135deg, #8e0e4a 0%, #c2185b 100%);
+  background: #4a6fa5;
   padding: 40px 35px;
   border-radius: 60px 0px 60px 0px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -159,7 +159,7 @@
 
 .womens-focus-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(194, 24, 91, 0.3);
+  box-shadow: 0 16px 40px rgba(74, 111, 165, 0.3);
 }
 
 .womens-focus-icon {
@@ -195,7 +195,7 @@
 
 .womens-impact-content h2 {
   font-size: 2.5rem;
-  color: #c2185b;
+  color: #4a6fa5;
   margin-bottom: 24px;
 }
 
@@ -238,7 +238,7 @@
   display: block;
   font-size: 2.8rem;
   font-weight: 800;
-  color: #c2185b;
+  color: #4a6fa5;
   margin-bottom: 6px;
 }
 
@@ -257,7 +257,7 @@
 .womens-gallery h2 {
   text-align: center;
   font-size: 2.5rem;
-  color: #c2185b;
+  color: #4a6fa5;
   margin-bottom: 10px;
 }
 
@@ -307,66 +307,6 @@
   font-size: 0.95rem;
 }
 
-.womens-cta {
-  background: linear-gradient(135deg, #8e0e4a 0%, #c2185b 50%, #e85d8a 100%);
-  color: #fff;
-  padding: 80px 0;
-  text-align: center;
-}
-
-.womens-cta h2 {
-  font-size: 2.8rem;
-  margin-bottom: 20px;
-}
-
-.womens-cta p {
-  max-width: 700px;
-  margin: 0 auto 36px;
-  line-height: 1.9;
-  font-size: 1.05rem;
-  opacity: 0.9;
-}
-
-.womens-cta-buttons {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.womens-btn {
-  display: inline-block;
-  padding: 14px 32px;
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.womens-btn-primary {
-  background: #2e2c8a;
-  color: #fff;
-  border: 2px solid #fff;
-}
-
-.womens-btn-primary:hover {
-  background: #3d3a9e;
-  transform: translateY(-2px);
-}
-
-.womens-btn-outline {
-  border: 2px solid #fff;
-  color: #fff;
-  background: transparent;
-}
-
-.womens-btn-outline:hover {
-  background: #fff;
-  color: #8e0e4a;
-  transform: translateY(-2px);
-}
-
 @media (max-width: 900px) {
   .womens-hero-content { padding: 0 40px; }
   .womens-hero-content h1 { font-size: 2.4rem; }
@@ -386,6 +326,4 @@
   .womens-focus h2 { font-size: 2rem; }
   .womens-impact-content h2 { font-size: 1.8rem; }
   .womens-gallery-grid { grid-template-columns: 1fr; }
-  .womens-cta { padding: 60px 24px; }
-  .womens-cta h2 { font-size: 2rem; }
 }

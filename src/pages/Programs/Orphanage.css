@@ -1,4 +1,4 @@
-.medical-page {
+.orphanage-page {
   background: #eff3ff;
   overflow-x: hidden;
 }
@@ -12,24 +12,14 @@
   margin-bottom: 12px;
 }
 
-.section-subtitle {
-  text-align: center;
-  color: #666;
-  font-size: 1.05rem;
-  margin-bottom: 40px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.medical-hero1 {
+.orphanage-hero {
   background: #eff3ff;
   padding: 20px;
   display: flex;
   justify-content: center;
 }
 
-.medical-overlay {
+.orphanage-overlay {
   position: relative;
   width: 90%;
   max-width: 1200px;
@@ -42,22 +32,22 @@
   align-items: center;
 }
 
-.medical-overlay::before {
+.orphanage-overlay::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1200&h=600&fit=crop") center/cover no-repeat;
+  background: url("https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?w=1200&h=600&fit=crop") center/cover no-repeat;
   opacity: 0.25;
 }
 
-.medical-hero-content {
+.orphanage-hero-content {
   position: relative;
   z-index: 2;
   padding: 0 80px;
   max-width: 700px;
 }
 
-.medical-hero-tag {
+.orphanage-hero-tag {
   display: inline-block;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 700;
@@ -65,63 +55,63 @@
   font-size: 0.85rem;
   margin-bottom: 16px;
   opacity: 0;
-  animation: medFadeSlideUp 0.8s ease 0.2s forwards;
+  animation: orphanageFadeSlideUp 0.8s ease 0.2s forwards;
 }
 
-.medical-hero-content h1 {
+.orphanage-hero-content h1 {
   font-size: 3.2rem;
   line-height: 1.1;
   color: #fff;
   margin-bottom: 20px;
   opacity: 0;
-  animation: medFadeSlideUp 0.8s ease 0.4s forwards;
+  animation: orphanageFadeSlideUp 0.8s ease 0.4s forwards;
 }
 
-.medical-hero-content p {
+.orphanage-hero-content p {
   font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.8;
   max-width: 600px;
   opacity: 0;
-  animation: medFadeSlideUp 0.8s ease 0.6s forwards;
+  animation: orphanageFadeSlideUp 0.8s ease 0.6s forwards;
 }
 
-@keyframes medFadeSlideUp {
+@keyframes orphanageFadeSlideUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-.medical-intro {
+.orphanage-intro {
   padding: 80px 0;
   background: #eff3ff;
 }
 
-.medical-intro-grid {
+.orphanage-intro-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
 }
 
-.medical-intro-text h2 {
+.orphanage-intro-text h2 {
   font-size: 2.8rem;
   color: #4a6fa5;
   margin-bottom: 20px;
   line-height: 1.2;
 }
 
-.medical-intro-text p {
+.orphanage-intro-text p {
   font-size: 1.05rem;
   line-height: 1.9;
   color: #555;
   margin-bottom: 16px;
 }
 
-.medical-intro-text strong {
+.orphanage-intro-text strong {
   color: #1a1a2e;
 }
 
-.medical-quote {
+.orphanage-quote {
   font-style: italic;
   color: #4a6fa5 !important;
   font-weight: 600;
@@ -130,7 +120,7 @@
   margin-top: 20px;
 }
 
-.medical-intro-image img {
+.orphanage-intro-image img {
   width: 100%;
   height: 420px;
   object-fit: cover;
@@ -139,41 +129,41 @@
   transition: transform 0.4s ease;
 }
 
-.medical-intro-image img:hover {
+.orphanage-intro-image img:hover {
   transform: scale(1.03);
 }
 
-.medical-mission {
+.orphanage-commitment {
   padding: 80px 0;
   background: #eff3ff;
 }
 
-.medical-mission h2 {
+.orphanage-commitment h2 {
   text-align: center;
   font-size: 2.8rem;
   color: #4a6fa5;
   margin-bottom: 10px;
 }
 
-.medical-mission-grid {
+.orphanage-commitment-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
-.medical-mission-card {
+.orphanage-commitment-card {
   background: #4a6fa5;
   padding: 40px 35px;
   border-radius: 60px 0px 60px 0px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.medical-mission-card:hover {
+.orphanage-commitment-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 16px 40px rgba(74, 111, 165, 0.3);
 }
 
-.medical-mission-icon {
+.orphanage-commitment-icon {
   font-size: 1.8rem;
   font-weight: 800;
   color: rgba(255, 255, 255, 0.3);
@@ -181,48 +171,48 @@
   letter-spacing: 2px;
 }
 
-.medical-mission-card h3 {
+.orphanage-commitment-card h3 {
   font-size: 1.3rem;
   color: #fff;
   margin-bottom: 14px;
 }
 
-.medical-mission-card p {
+.orphanage-commitment-card p {
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.9);
   font-size: 0.95rem;
 }
 
-.medical-impact {
+.orphanage-impact {
   padding: 80px 0;
   background: #eff3ff;
 }
 
-.medical-impact-content {
+.orphanage-impact-content {
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
 }
 
-.medical-impact-content h2 {
+.orphanage-impact-content h2 {
   font-size: 2.5rem;
   color: #4a6fa5;
   margin-bottom: 24px;
 }
 
-.medical-impact-content p {
+.orphanage-impact-content p {
   font-size: 1.05rem;
   line-height: 1.9;
   color: #555;
   margin-bottom: 16px;
 }
 
-.medical-stats {
+.orphanage-stats {
   padding: 60px 20px;
   background: #eff3ff;
 }
 
-.medical-stats-grid {
+.orphanage-stats-grid {
   display: flex;
   justify-content: center;
   gap: 60px;
@@ -231,7 +221,7 @@
   flex-wrap: wrap;
 }
 
-.medical-stat {
+.orphanage-stat {
   text-align: center;
   padding: 30px 40px;
   background: #fff;
@@ -241,11 +231,11 @@
   transition: transform 0.3s ease;
 }
 
-.medical-stat:hover {
+.orphanage-stat:hover {
   transform: translateY(-5px);
 }
 
-.medical-stat-number {
+.orphanage-stat-number {
   display: block;
   font-size: 2.8rem;
   font-weight: 800;
@@ -253,39 +243,39 @@
   margin-bottom: 6px;
 }
 
-.medical-stat-label {
+.orphanage-stat-label {
   display: block;
   font-size: 0.95rem;
   color: #666;
   font-weight: 600;
 }
 
-.medical-gallery {
+.orphanage-gallery {
   padding: 80px 0;
   background: #eff3ff;
 }
 
-.medical-gallery h2 {
+.orphanage-gallery h2 {
   text-align: center;
   font-size: 2.5rem;
   color: #4a6fa5;
   margin-bottom: 10px;
 }
 
-.medical-gallery-grid {
+.orphanage-gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.medical-gallery-item {
+.orphanage-gallery-item {
   position: relative;
   overflow: hidden;
   border-radius: 40px 0px 40px 0px;
   cursor: pointer;
 }
 
-.medical-gallery-item img {
+.orphanage-gallery-item img {
   width: 100%;
   height: 260px;
   object-fit: cover;
@@ -293,11 +283,11 @@
   display: block;
 }
 
-.medical-gallery-item:hover img {
+.orphanage-gallery-item:hover img {
   transform: scale(1.08);
 }
 
-.medical-gallery-overlay {
+.orphanage-gallery-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 60%);
@@ -308,33 +298,33 @@
   transition: opacity 0.3s ease;
 }
 
-.medical-gallery-item:hover .medical-gallery-overlay {
+.orphanage-gallery-item:hover .orphanage-gallery-overlay {
   opacity: 1;
 }
 
-.medical-gallery-overlay span {
+.orphanage-gallery-overlay span {
   color: #fff;
   font-weight: 600;
   font-size: 0.95rem;
 }
 
 @media (max-width: 900px) {
-  .medical-hero-content { padding: 0 40px; }
-  .medical-hero-content h1 { font-size: 2.4rem; }
-  .medical-intro-grid { grid-template-columns: 1fr; gap: 40px; }
-  .medical-intro-image img { height: 300px; }
-  .medical-mission-grid { grid-template-columns: 1fr; }
-  .medical-gallery-grid { grid-template-columns: 1fr 1fr; }
-  .medical-stats-grid { gap: 20px; }
+  .orphanage-hero-content { padding: 0 40px; }
+  .orphanage-hero-content h1 { font-size: 2.4rem; }
+  .orphanage-intro-grid { grid-template-columns: 1fr; gap: 40px; }
+  .orphanage-intro-image img { height: 300px; }
+  .orphanage-commitment-grid { grid-template-columns: 1fr; }
+  .orphanage-gallery-grid { grid-template-columns: 1fr 1fr; }
+  .orphanage-stats-grid { gap: 20px; }
 }
 
 @media (max-width: 768px) {
-  .medical-overlay { height: 450px; border-radius: 0px 60px 0px 40px; }
-  .medical-hero-content { padding: 0 30px; }
-  .medical-hero-content h1 { font-size: 1.8rem; }
-  .medical-hero-content p { font-size: 0.95rem; }
-  .medical-intro-text h2 { font-size: 2rem; }
-  .medical-mission h2 { font-size: 2rem; }
-  .medical-impact-content h2 { font-size: 1.8rem; }
-  .medical-gallery-grid { grid-template-columns: 1fr; }
+  .orphanage-overlay { height: 450px; border-radius: 0px 60px 0px 40px; }
+  .orphanage-hero-content { padding: 0 30px; }
+  .orphanage-hero-content h1 { font-size: 1.8rem; }
+  .orphanage-hero-content p { font-size: 0.95rem; }
+  .orphanage-intro-text h2 { font-size: 2rem; }
+  .orphanage-commitment h2 { font-size: 2rem; }
+  .orphanage-impact-content h2 { font-size: 1.8rem; }
+  .orphanage-gallery-grid { grid-template-columns: 1fr; }
 }

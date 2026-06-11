@@ -1,236 +1,174 @@
+import { useEffect, useRef } from "react";
 import "./Medical.css";
 
+const galleryImages = [
+  { id: 1, src: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=600&h=400&fit=crop", alt: "Medical care" },
+  { id: 2, src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&h=400&fit=crop", alt: "Surgery support" },
+  { id: 3, src: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&h=400&fit=crop", alt: "Hospital care" },
+  { id: 4, src: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=600&h=400&fit=crop", alt: "Child healthcare" },
+  { id: 5, src: "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=400&fit=crop", alt: "Medical treatment" },
+  { id: 6, src: "https://images.unsplash.com/photo-1530490124645-3e767e6bebb4?w=600&h=400&fit=crop", alt: "Hope and healing" },
+];
+
+const missions = [
+  {
+    title: "Saving Children's Lives",
+    desc: "Access to vital surgeries is a matter of survival. Project Lifeline steps in as their lifeline, ensuring no child faces critical illness due to financial limitations.",
+  },
+  {
+    title: "Critical Surgery Support",
+    desc: "We take on cases of individuals, especially children, who require complex and costly surgeries but lack the means to pay for them.",
+  },
+  {
+    title: "Compassionate Care",
+    desc: "Project Lifeline embodies the spirit of compassion and unwavering solidarity. Communities come together to create miracles, one surgery at a time.",
+  },
+];
+
 export default function Medical() {
+  const sectionRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    sectionRefs.current.forEach((el) => {
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="medical-page">
+      <section className="medical-hero1">
+        <div className="medical-overlay">
+          <div className="medical-hero-content">
+            <span className="medical-hero-tag" ref={(el) => (sectionRefs.current[0] = el)}>PROJECT LIFE-LINE</span>
+            <h1 ref={(el) => (sectionRefs.current[1] = el)}>Saving Lives,<br />One Surgery at a Time</h1>
+            <p ref={(el) => (sectionRefs.current[2] = el)}>
+              Every heartbeat counts. Project Lifeline is our unwavering commitment to providing
+              a lifeline of hope to the poorest and most vulnerable among us.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      {/* Hero */}
-    <section className="medical-hero">
-  <div className="medical-overlay">
-
-    <div className="medical-hero-content">
-
-      {/* <h1>Project LIFE-LINE</h1> */}
-
-      {/* <div className="hero-buttons">
-        <a href="/donate" className="btn-primary">
-          Donate Now
-        </a>
-      </div> */}
-
-    </div>
-
-  </div>
-  </section>
-
-    {/* SECTION 1 */}
-<section className="medical-section">
-  <div className="container medical-grid">
-
-    <div className="medical-image">
-      <img src="/images/medical/img2.jpeg" alt="Medical Support" />
-    </div>
-
-    <div className="medical-content">
-      <span>PROJECT LIFE-LINE</span>
-      <h2>Every Heartbeat Matters</h2>
-
-      <p>
-        At AFLF, we believe that every child deserves a chance to live a healthy
-        and fulfilling life. Project LIFE-LINE is dedicated to supporting children
-        and individuals who require urgent medical care but cannot afford life-saving treatment.
-      </p>
-
-      <p>
-        Through community support and compassionate action, we help provide surgeries,
-        healthcare assistance, and renewed hope to those facing critical medical challenges.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
-{/* SECTION 2 (REVERSED) */}
-<section className="medical-section reverse">
-  <div className="container medical-grid">
-
-        <div className="medical-image">
-      <img src="/images/medical/img2.jpeg" alt="Child Care" />
-    </div>
-
-
-
-    <div className="medical-content">
-      <span>OUR PURPOSE</span>
-      <h2>Saving Children's Lives</h2>
-
-      <p>
-        Every child deserves access to healthcare regardless of financial circumstances.
-        Through Project LIFE-LINE we support surgeries, treatments and medical interventions
-        that save lives.
-      </p>
-    </div>
-
-    {/* <div className="medical-image">
-      <img src="/images/medical/img2.jpeg" alt="Child Care" />
-    </div> */}
-
-  </div>
-</section>
-
-
-
-
-      {/* Mission Cards */}
-      <section className="medical-mission">
+      <section className="medical-intro" ref={(el) => (sectionRefs.current[3] = el)}>
         <div className="container">
+          <div className="medical-intro-grid">
+            <div className="medical-intro-text">
+              <span className="section-tag">WELCOME TO</span>
+              <h2>Project Life-Line</h2>
+              <p>
+                At <strong>AFLF (Ashray for Life Foundation)</strong>, we firmly believe that
+                every heartbeat counts, especially when it belongs to a child or a person in
+                desperate need of life-saving surgery. <strong>Project Lifeline</strong> is our
+                unwavering commitment to providing a lifeline of hope to the poorest and most
+                vulnerable among us.
+              </p>
+              <p>
+                We understand that for many little hearts, access to vital surgeries is a matter
+                of survival. Project Lifeline steps in as their lifeline, ensuring that no child
+                faces the threat of critical illness due to financial limitations.
+              </p>
+              <p className="medical-quote">
+                "One surgery, one life saved — it's not just about surgeries; it's about giving
+                children the precious gift of life itself."
+              </p>
+            </div>
+            <div className="medical-intro-image">
+              <img
+                src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=600&h=500&fit=crop"
+                alt="Medical care"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section className="medical-mission" ref={(el) => (sectionRefs.current[4] = el)}>
+        <div className="container">
           <h2>Our Mission</h2>
-
-          <div className="mission-grid">
-
-            <div className="mission-card">
-              <h3>Saving Children's Lives</h3>
-              <p>
-                Ensuring that children receive essential surgeries and medical
-                treatment regardless of financial limitations.
-              </p>
-            </div>
-
-            <div className="mission-card">
-              <h3>Critical Surgery Support</h3>
-              <p>
-                Supporting complex and costly surgeries through fundraising and
-                community-driven initiatives.
-              </p>
-            </div>
-
-            <div className="mission-card">
-              <h3>Compassionate Care</h3>
-              <p>
-                Bringing communities together to provide hope, dignity, and
-                life-changing medical support.
-              </p>
-            </div>
-
+          <p className="section-subtitle">
+            Through Project Lifeline, we are dedicated to saving lives and restoring hope
+          </p>
+          <div className="medical-mission-grid">
+            {missions.map((m, i) => (
+              <div key={i} className="medical-mission-card">
+                <div className="medical-mission-icon">{String(i + 1).padStart(2, "0")}</div>
+                <h3>{m.title}</h3>
+                <p>{m.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
- <section className="image-content reverse-section">
-  <div className="container image-grid">
-
-    <div className="content-box">
-      <span>CRITICAL SUPPORT</span>
-
-      <h2>Giving Families A Second Chance</h2>
-
-      <p>
-        We support children and individuals who require complex and costly
-        surgeries but lack the financial means to access treatment.
-      </p>
-
-      <p>
-        Through fundraising, partnerships, and community support, we help make
-        life-saving healthcare accessible to those who need it most.
-      </p>
-    </div>
-
-    <div className="image-box">
-      <img
-        src="/images/medical/img3.jpeg"
-        alt="Surgery Support"
-      />
-    </div>
-
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-  <section className="impact-banner">
-  <div className="impact-item">
-    <h3>500+</h3>
-    <p>Lives Impacted</p>
-  </div>
-
-  <div className="impact-item">
-    <h3>100+</h3>
-    <p>Families Supported</p>
-  </div>
-
-  <div className="impact-item">
-    <h3>24/7</h3>
-    <p>Community Care</p>
-  </div>
-
-</section>
-
-      {/* Impact */}
-      <section className="medical-impact">
+      <section className="medical-impact" ref={(el) => (sectionRefs.current[5] = el)}>
         <div className="container">
-
-          <h2>Why Project LIFE-LINE Matters</h2>
-
-          <div className="impact-grid">
-
-            <div>
-              <h3>Life-Saving</h3>
-              <p>
-                Critical surgeries can transform lives and give children a
-                brighter future.
-              </p>
-            </div>
-
-            <div>
-              <h3>Accessible Care</h3>
-              <p>
-                Financial hardship should never prevent access to healthcare.
-              </p>
-            </div>
-
-            <div>
-              <h3>Community Driven</h3>
-              <p>
-                Together we create lasting impact through collective support.
-              </p>
-            </div>
-
+          <div className="medical-impact-content">
+            <span className="section-tag">OUR IMPACT</span>
+            <h2>Giving Families a Second Chance</h2>
+            <p>
+              Through Project Lifeline, we have witnessed the miracle of life restored. Children
+              who once faced critical health challenges now play, learn, and dream of a bright
+              future. Families who had lost hope now have their loved ones back.
+            </p>
+            <p>
+              Every surgery funded, every life saved, every family restored — these are the
+              milestones that drive us forward. Together, we are creating miracles, one surgery
+              at a time, and proving that collective compassion can achieve the extraordinary.
+            </p>
           </div>
-
         </div>
       </section>
-      <section className="gallery-section">
 
-  <div className="container">
+      <section className="medical-stats" ref={(el) => (sectionRefs.current[6] = el)}>
+        <div className="medical-stats-grid">
+          <div className="medical-stat">
+            <span className="medical-stat-number">500+</span>
+            <span className="medical-stat-label">Lives Impacted</span>
+          </div>
+          <div className="medical-stat">
+            <span className="medical-stat-number">100+</span>
+            <span className="medical-stat-label">Surgeries Supported</span>
+          </div>
+          <div className="medical-stat">
+            <span className="medical-stat-number">200+</span>
+            <span className="medical-stat-label">Families Helped</span>
+          </div>
+          <div className="medical-stat">
+            <span className="medical-stat-number">24/7</span>
+            <span className="medical-stat-label">Emergency Care</span>
+          </div>
+        </div>
+      </section>
 
-    <h2>Moments of Hope</h2>
-
-    <div className="gallery-grid">
-
-      <img src="/images/medical/gallery-1.jpg" alt="" />
-      <img src="/images/medical/gallery-2.jpg" alt="" />
-      <img src="/images/medical/gallery-3.jpg" alt="" />
-      <img src="/images/medical/gallery-4.jpg" alt="" />
-      <img src="/images/medical/gallery-5.jpg" alt="" />
-      <img src="/images/medical/gallery-6.jpg" alt="" />
-
-    </div>
-
-  </div>
-
-</section>
-
-      {/* CTA */}
-     
-
+      <section className="medical-gallery" ref={(el) => (sectionRefs.current[7] = el)}>
+        <div className="container">
+          <h2>Moments of Healing</h2>
+          <p className="section-subtitle">Every life saved is a testament to the power of compassion</p>
+          <div className="medical-gallery-grid">
+            {galleryImages.map((img) => (
+              <div key={img.id} className="medical-gallery-item">
+                <img src={img.src} alt={img.alt} />
+                <div className="medical-gallery-overlay">
+                  <span>{img.alt}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

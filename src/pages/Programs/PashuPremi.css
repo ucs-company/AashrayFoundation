@@ -1,4 +1,4 @@
-.medical-page {
+.pashu-page {
   background: #eff3ff;
   overflow-x: hidden;
 }
@@ -22,14 +22,14 @@
   margin-right: auto;
 }
 
-.medical-hero1 {
+.pashu-hero {
   background: #eff3ff;
   padding: 20px;
   display: flex;
   justify-content: center;
 }
 
-.medical-overlay {
+.pashu-overlay {
   position: relative;
   width: 90%;
   max-width: 1200px;
@@ -42,22 +42,22 @@
   align-items: center;
 }
 
-.medical-overlay::before {
+.pashu-overlay::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1200&h=600&fit=crop") center/cover no-repeat;
+  background: url("https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=1200&h=600&fit=crop") center/cover no-repeat;
   opacity: 0.25;
 }
 
-.medical-hero-content {
+.pashu-hero-content {
   position: relative;
   z-index: 2;
   padding: 0 80px;
   max-width: 700px;
 }
 
-.medical-hero-tag {
+.pashu-hero-tag {
   display: inline-block;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 700;
@@ -65,63 +65,63 @@
   font-size: 0.85rem;
   margin-bottom: 16px;
   opacity: 0;
-  animation: medFadeSlideUp 0.8s ease 0.2s forwards;
+  animation: pashuFadeSlideUp 0.8s ease 0.2s forwards;
 }
 
-.medical-hero-content h1 {
+.pashu-hero-content h1 {
   font-size: 3.2rem;
   line-height: 1.1;
   color: #fff;
   margin-bottom: 20px;
   opacity: 0;
-  animation: medFadeSlideUp 0.8s ease 0.4s forwards;
+  animation: pashuFadeSlideUp 0.8s ease 0.4s forwards;
 }
 
-.medical-hero-content p {
+.pashu-hero-content p {
   font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.8;
   max-width: 600px;
   opacity: 0;
-  animation: medFadeSlideUp 0.8s ease 0.6s forwards;
+  animation: pashuFadeSlideUp 0.8s ease 0.6s forwards;
 }
 
-@keyframes medFadeSlideUp {
+@keyframes pashuFadeSlideUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-.medical-intro {
+.pashu-intro {
   padding: 80px 0;
   background: #eff3ff;
 }
 
-.medical-intro-grid {
+.pashu-intro-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
 }
 
-.medical-intro-text h2 {
+.pashu-intro-text h2 {
   font-size: 2.8rem;
   color: #4a6fa5;
   margin-bottom: 20px;
   line-height: 1.2;
 }
 
-.medical-intro-text p {
+.pashu-intro-text p {
   font-size: 1.05rem;
   line-height: 1.9;
   color: #555;
   margin-bottom: 16px;
 }
 
-.medical-intro-text strong {
+.pashu-intro-text strong {
   color: #1a1a2e;
 }
 
-.medical-quote {
+.pashu-quote {
   font-style: italic;
   color: #4a6fa5 !important;
   font-weight: 600;
@@ -130,7 +130,7 @@
   margin-top: 20px;
 }
 
-.medical-intro-image img {
+.pashu-intro-image img {
   width: 100%;
   height: 420px;
   object-fit: cover;
@@ -139,41 +139,41 @@
   transition: transform 0.4s ease;
 }
 
-.medical-intro-image img:hover {
+.pashu-intro-image img:hover {
   transform: scale(1.03);
 }
 
-.medical-mission {
+.pashu-mission {
   padding: 80px 0;
   background: #eff3ff;
 }
 
-.medical-mission h2 {
+.pashu-mission h2 {
   text-align: center;
   font-size: 2.8rem;
   color: #4a6fa5;
   margin-bottom: 10px;
 }
 
-.medical-mission-grid {
+.pashu-mission-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
-.medical-mission-card {
+.pashu-mission-card {
   background: #4a6fa5;
   padding: 40px 35px;
   border-radius: 60px 0px 60px 0px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.medical-mission-card:hover {
+.pashu-mission-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 16px 40px rgba(74, 111, 165, 0.3);
 }
 
-.medical-mission-icon {
+.pashu-mission-icon {
   font-size: 1.8rem;
   font-weight: 800;
   color: rgba(255, 255, 255, 0.3);
@@ -181,48 +181,48 @@
   letter-spacing: 2px;
 }
 
-.medical-mission-card h3 {
+.pashu-mission-card h3 {
   font-size: 1.3rem;
   color: #fff;
   margin-bottom: 14px;
 }
 
-.medical-mission-card p {
+.pashu-mission-card p {
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.9);
   font-size: 0.95rem;
 }
 
-.medical-impact {
+.pashu-impact {
   padding: 80px 0;
   background: #eff3ff;
 }
 
-.medical-impact-content {
+.pashu-impact-content {
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
 }
 
-.medical-impact-content h2 {
+.pashu-impact-content h2 {
   font-size: 2.5rem;
   color: #4a6fa5;
   margin-bottom: 24px;
 }
 
-.medical-impact-content p {
+.pashu-impact-content p {
   font-size: 1.05rem;
   line-height: 1.9;
   color: #555;
   margin-bottom: 16px;
 }
 
-.medical-stats {
+.pashu-stats {
   padding: 60px 20px;
   background: #eff3ff;
 }
 
-.medical-stats-grid {
+.pashu-stats-grid {
   display: flex;
   justify-content: center;
   gap: 60px;
@@ -231,7 +231,7 @@
   flex-wrap: wrap;
 }
 
-.medical-stat {
+.pashu-stat {
   text-align: center;
   padding: 30px 40px;
   background: #fff;
@@ -241,11 +241,11 @@
   transition: transform 0.3s ease;
 }
 
-.medical-stat:hover {
+.pashu-stat:hover {
   transform: translateY(-5px);
 }
 
-.medical-stat-number {
+.pashu-stat-number {
   display: block;
   font-size: 2.8rem;
   font-weight: 800;
@@ -253,39 +253,39 @@
   margin-bottom: 6px;
 }
 
-.medical-stat-label {
+.pashu-stat-label {
   display: block;
   font-size: 0.95rem;
   color: #666;
   font-weight: 600;
 }
 
-.medical-gallery {
+.pashu-gallery {
   padding: 80px 0;
   background: #eff3ff;
 }
 
-.medical-gallery h2 {
+.pashu-gallery h2 {
   text-align: center;
   font-size: 2.5rem;
   color: #4a6fa5;
   margin-bottom: 10px;
 }
 
-.medical-gallery-grid {
+.pashu-gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.medical-gallery-item {
+.pashu-gallery-item {
   position: relative;
   overflow: hidden;
   border-radius: 40px 0px 40px 0px;
   cursor: pointer;
 }
 
-.medical-gallery-item img {
+.pashu-gallery-item img {
   width: 100%;
   height: 260px;
   object-fit: cover;
@@ -293,11 +293,11 @@
   display: block;
 }
 
-.medical-gallery-item:hover img {
+.pashu-gallery-item:hover img {
   transform: scale(1.08);
 }
 
-.medical-gallery-overlay {
+.pashu-gallery-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 60%);
@@ -308,33 +308,33 @@
   transition: opacity 0.3s ease;
 }
 
-.medical-gallery-item:hover .medical-gallery-overlay {
+.pashu-gallery-item:hover .pashu-gallery-overlay {
   opacity: 1;
 }
 
-.medical-gallery-overlay span {
+.pashu-gallery-overlay span {
   color: #fff;
   font-weight: 600;
   font-size: 0.95rem;
 }
 
 @media (max-width: 900px) {
-  .medical-hero-content { padding: 0 40px; }
-  .medical-hero-content h1 { font-size: 2.4rem; }
-  .medical-intro-grid { grid-template-columns: 1fr; gap: 40px; }
-  .medical-intro-image img { height: 300px; }
-  .medical-mission-grid { grid-template-columns: 1fr; }
-  .medical-gallery-grid { grid-template-columns: 1fr 1fr; }
-  .medical-stats-grid { gap: 20px; }
+  .pashu-hero-content { padding: 0 40px; }
+  .pashu-hero-content h1 { font-size: 2.4rem; }
+  .pashu-intro-grid { grid-template-columns: 1fr; gap: 40px; }
+  .pashu-intro-image img { height: 300px; }
+  .pashu-mission-grid { grid-template-columns: 1fr; }
+  .pashu-gallery-grid { grid-template-columns: 1fr 1fr; }
+  .pashu-stats-grid { gap: 20px; }
 }
 
 @media (max-width: 768px) {
-  .medical-overlay { height: 450px; border-radius: 0px 60px 0px 40px; }
-  .medical-hero-content { padding: 0 30px; }
-  .medical-hero-content h1 { font-size: 1.8rem; }
-  .medical-hero-content p { font-size: 0.95rem; }
-  .medical-intro-text h2 { font-size: 2rem; }
-  .medical-mission h2 { font-size: 2rem; }
-  .medical-impact-content h2 { font-size: 1.8rem; }
-  .medical-gallery-grid { grid-template-columns: 1fr; }
+  .pashu-overlay { height: 450px; border-radius: 0px 60px 0px 40px; }
+  .pashu-hero-content { padding: 0 30px; }
+  .pashu-hero-content h1 { font-size: 1.8rem; }
+  .pashu-hero-content p { font-size: 0.95rem; }
+  .pashu-intro-text h2 { font-size: 2rem; }
+  .pashu-mission h2 { font-size: 2rem; }
+  .pashu-impact-content h2 { font-size: 1.8rem; }
+  .pashu-gallery-grid { grid-template-columns: 1fr; }
 }
