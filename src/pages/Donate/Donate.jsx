@@ -38,6 +38,12 @@ const causeIcons = {
       <path d="M16 3.13a4 4 0 0 1 0 7.75" />
     </svg>
   ),
+  ashra: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+      <polyline points="9 22 9 12 15 12 15 22" />
+    </svg>
+  ),
 };
 
 const causes = [
@@ -115,6 +121,21 @@ const causes = [
       { emoji: "🎂", text: "Celebrations & companionship" },
     ],
     stats: { label: "Elders Cared For", value: "150+" },
+  },
+  {
+    id: "ashra",
+    label: "Project Ashra",
+    icon: causeIcons.ashra,
+    color: "#06b6d4",
+    title: "Empower a Child Through Education",
+    description:
+      "Your donation supports Project Ashra — a haven of free education for underprivileged children. We provide shelter, school supplies, and a nurturing environment where every child gets the chance to learn, grow, and dream of a brighter future.",
+    impact: [
+      { emoji: "📖", text: "Free education for orphaned children" },
+      { emoji: "🎒", text: "School bags & stationery supplies" },
+      { emoji: "🏡", text: "Safe shelter & nurturing care" },
+    ],
+    stats: { label: "Children Supported", value: "200+" },
   },
 ];
 

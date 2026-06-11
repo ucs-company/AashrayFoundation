@@ -1,6 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home/Home';
 import About from '../pages/About/About';
+import ManagementTeam from '../pages/About/ManagementTeam';
+import LegalDocuments from '../pages/About/LegalDocuments';
 import Programs from '../pages/Programs/Programs';
 import GalleryPage from '../pages/Gallery/GalleryPage';
 import Donate from '../pages/Donate/Donate';
@@ -24,6 +26,8 @@ function AppRoutes() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
+      <Route path="/about/management-team" element={<ManagementTeam />} />
+      <Route path="/about/legal-documents" element={<LegalDocuments />} />
       <Route path="/ContactUs" element={<ContactUs />} />
 
       <Route path="/programs" element={<Programs />} />

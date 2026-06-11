@@ -4,7 +4,14 @@ import Button from '../Common/Button';
 import './Navbar.css';
 
 const navLinks = [
-  { label: 'About Us', path: '/about' },
+  {
+    label: 'About Us',
+    path: '/about',
+    dropdown: [
+      { label: 'Management Team', path: '/about/management-team' },
+      { label: 'Legal Documents', path: '/about/legal-documents' },
+    ],
+  },
   {
     label: 'Our Projects',
     path: '/programs',
