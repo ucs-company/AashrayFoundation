@@ -36,8 +36,8 @@
   height: 520px;
   overflow: hidden;
   border-radius: 120px 0px 80px 0px;
-  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 50%, #4a6fa5 100%);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  /* background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 50%, #4a6fa5 100%);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15); */
   display: flex;
   align-items: center;
 }
@@ -46,8 +46,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("https://images.unsplash.com/photo-1516307365426-bea591f05011?w=1200&h=600&fit=crop") center/cover no-repeat;
-  opacity: 0.25;
+  background: url("/images/oldage/oldage.jpg")  center/cover no-repeat;
+  /* opacity: 0.25; */
 }
 
 .oldage-hero-content {
@@ -92,7 +92,7 @@
 }
 
 .oldage-intro {
-  padding: 80px 0;
+  padding: 20px 0;
   background: #eff3ff;
 }
 
@@ -144,7 +144,7 @@
 }
 
 .oldage-mission {
-  padding: 80px 0;
+  padding: 20px 0;
   background: #eff3ff;
 }
 

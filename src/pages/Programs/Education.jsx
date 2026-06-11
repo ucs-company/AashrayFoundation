@@ -2,12 +2,36 @@ import { useEffect, useRef } from "react";
 import "./Education.css";
 
 const galleryImages = [
-  { id: 1, src: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=400&fit=crop", alt: "Children studying" },
-  { id: 2, src: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop", alt: "Classroom" },
-  { id: 3, src: "https://images.unsplash.com/photo-1523050854058-8df90110c7f1?w=600&h=400&fit=crop", alt: "Students learning" },
-  { id: 4, src: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=400&fit=crop", alt: "Library" },
-  { id: 5, src: "https://images.unsplash.com/photo-1577896851231-70ef18881754?w=600&h=400&fit=crop", alt: "School" },
-  { id: 6, src: "https://images.unsplash.com/photo-1588072432836-e10032774350?w=600&h=400&fit=crop", alt: "Children with books" },
+  {
+    id: 1,
+    src: "/images/education/Education2.jpg",
+    alt: "Education Support"
+  },
+  {
+    id: 2,
+    src: "/images/education/Education3.jpg",
+    alt: "Children Learning"
+  },
+  {
+    id: 3,
+    src: "/images/education/Education4.jpg",
+    alt: "School Activities"
+  },
+  {
+    id: 4,
+    src: "/images/education/Education5.jpg",
+    alt: "Educational Materials"
+  },
+  {
+    id: 5,
+    src: "/images/education/Education6.jpg",
+    alt: "Classroom Support"
+  },
+  {
+    id: 6,
+    src: "/images/education/Education1.jpg",
+    alt: "Students Learning"
+  },
 ];
 
 const missions = [
@@ -76,8 +100,8 @@ export default function Education() {
             </div>
             <div className="edu-intro-image">
               <img
-                src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=500&fit=crop"
-                alt="Education"
+                src="/images/education/Education1.jpg"
+                alt=""
               />
             </div>
           </div>

@@ -26,8 +26,8 @@
   height: 520px;
   overflow: hidden;
   border-radius: 120px 0px 80px 0px;
-  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 50%, #4a6fa5 100%);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  /* background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 50%, #4a6fa5 100%);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15); */
   display: flex;
   align-items: center;
 }
@@ -36,8 +36,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1200&h=600&fit=crop") center/cover no-repeat;
-  opacity: 0.25;
+  background: url("/images/jal/jal.jpg") center/cover no-repeat;
+  /* opacity: 0.25; */
 }
 
 .jal-hero-content {
@@ -82,7 +82,7 @@
 }
 
 .jal-intro {
-  padding: 80px 0;
+  padding: 20px 0;
   background: #eff3ff;
 }
 
@@ -134,7 +134,7 @@
 }
 
 .jal-mission {
-  padding: 80px 0;
+  padding: 0px 0;
   background: #eff3ff;
 }
 
@@ -166,7 +166,7 @@
 .jal-mission-icon {
   font-size: 1.8rem;
   font-weight: 800;
-  color: rgba(255, 255, 255, 0.3);
+  color: #f5a623;
   margin-bottom: 20px;
   letter-spacing: 2px;
 }
@@ -184,7 +184,7 @@
 }
 
 .jal-impact {
-  padding: 80px 0;
+  padding: 20px 0;
   background: #eff3ff;
 }
 
@@ -208,14 +208,14 @@
 }
 
 .jal-stats {
-  padding: 60px 20px;
+  padding: 20px 20px;
   background: #eff3ff;
 }
 
 .jal-stats-grid {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 20px;
   max-width: 1000px;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -224,7 +224,7 @@
 .jal-stat {
   text-align: center;
   padding: 30px 40px;
-  background: #fff;
+  background: #f5a623;
   border-radius: 30px 0px 30px 0px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
   min-width: 180px;
@@ -239,19 +239,19 @@
   display: block;
   font-size: 2.8rem;
   font-weight: 800;
-  color: #4a6fa5;
+  color: #fff;
   margin-bottom: 6px;
 }
 
 .jal-stat-label {
   display: block;
   font-size: 0.95rem;
-  color: #666;
+  color: #000;
   font-weight: 600;
 }
 
 .jal-gallery {
-  padding: 80px 0;
+  padding: 20px 0px;
   background: #eff3ff;
 }
 

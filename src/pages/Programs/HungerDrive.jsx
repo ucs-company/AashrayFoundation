@@ -2,12 +2,12 @@ import { useEffect, useRef } from "react";
 import "./HungerDrive.css";
 
 const galleryImages = [
-  { id: 1, src: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop", alt: "Food distribution" },
-  { id: 2, src: "https://images.unsplash.com/photo-1593113616828-6f2b160f54a0?w=600&h=400&fit=crop", alt: "Meal preparation" },
-  { id: 3, src: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=600&h=400&fit=crop", alt: "Community kitchen" },
-  { id: 4, src: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&h=400&fit=crop", alt: "Food packets" },
-  { id: 5, src: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&h=400&fit=crop", alt: "Volunteers serving" },
-  { id: 6, src: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&h=400&fit=crop", alt: "Happy children eating" },
+  { id: 1, src: "/images/ZeroHunger/img2.jpg", alt: "Food Distribution" },
+  { id: 2, src: "/images/ZeroHunger/img3.jpg", alt: "Meal Preparation" },
+  { id: 3, src: "/images/ZeroHunger/img4.jpg", alt: "Community Kitchen" },
+  { id: 4, src: "/images/ZeroHunger/img5.jpg", alt: "Food Packets" },
+  { id: 5, src: "/images/ZeroHunger/img6.jpg", alt: "Volunteers Serving" },
+  { id: 6, src: "/images/ZeroHunger/img1.jpg", alt: "Happy Children Eating" },
 ];
 
 const missions = [
@@ -52,11 +52,11 @@ export default function HungerDrive() {
       <section className="hunger-hero">
         <div className="hunger-overlay">
           <div className="hunger-hero-content">
-            <span className="hunger-hero-tag" ref={(el) => (sectionRefs.current[0] = el)}>PROJECT ZERO HUNGER DRIVE</span>
-            <h1 ref={(el) => (sectionRefs.current[1] = el)}>Ending Hunger,<br />One Meal at a Time</h1>
+            {/* <span className="hunger-hero-tag" ref={(el) => (sectionRefs.current[0] = el)}>PROJECT ZERO HUNGER DRIVE</span> */}
+            {/* <h1 ref={(el) => (sectionRefs.current[1] = el)}>Ending Hunger,<br />One Meal at a Time</h1> */}
             <p ref={(el) => (sectionRefs.current[2] = el)}>
-              Dedicated to providing essential food to those in dire need — because no one should
-              go to bed hungry in Mumbai's slums or anywhere in India.
+              {/* Dedicated to providing essential food to those in dire need — because no one should
+              go to bed hungry in Mumbai's slums or anywhere in India. */}
             </p>
           </div>
         </div>
@@ -86,7 +86,7 @@ export default function HungerDrive() {
             </div>
             <div className="hunger-intro-image">
               <img
-                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=500&fit=crop"
+                src="/images/ZeroHunger/img1.jpg"
                 alt="Food distribution"
               />
             </div>

@@ -98,7 +98,7 @@ const galleryData = [
 
   {
     id: 4,
-    title: "Jal",
+    title: "Project JAL",
     image: "/images/gallery/jal7.jpg",
     description: "Clean water for healthy life.",
     link: '#',

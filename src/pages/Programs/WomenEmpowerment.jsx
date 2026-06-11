@@ -2,14 +2,13 @@ import { useEffect, useRef } from "react";
 import "./WomenEmpowerment.css";
 
 const galleryImages = [
-  { id: 1, src: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=400&fit=crop", alt: "Women empowerment" },
-  { id: 2, src: "https://images.unsplash.com/photo-1591115765373-5207764f72e4?w=600&h=400&fit=crop", alt: "Vocational training" },
-  { id: 3, src: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&h=400&fit=crop", alt: "Skill development" },
-  { id: 4, src: "https://images.unsplash.com/photo-1526676037777-05a921554f77?w=600&h=400&fit=crop", alt: "Women entrepreneurs" },
-  { id: 5, src: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=600&h=400&fit=crop", alt: "Community support" },
-  { id: 6, src: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop", alt: "Education for girls" },
+  { id: 1, src: "/images/NariTarang/img2.jpg", alt: "Women Empowerment" },
+  { id: 2, src: "/images/NariTarang/img3.jpg", alt: "Vocational Training" },
+  { id: 3, src: "/images/NariTarang/img4.jpg", alt: "Skill Development" },
+  { id: 4, src: "/images/NariTarang/img5.jpg", alt: "Women Entrepreneurs" },
+  { id: 5, src: "/images/NariTarang/img6.jpg", alt: "Community Support" },
+  { id: 6, src: "/images/NariTarang/img1.jpg", alt: "Education For Girls" },
 ];
-
 const focusAreas = [
   {
     title: "Education for Girls",
@@ -94,8 +93,8 @@ export default function WomenEmpowerment() {
             </div>
             <div className="womens-intro-image">
               <img
-                src="https://images.unsplash.com/photo-1591115765373-5207764f72e4?w=600&h=500&fit=crop"
-                alt="Women empowerment"
+                  src="/images/NariTarang/img1.jpg"
+                  alt="Women Empowerment"
               />
             </div>
           </div>

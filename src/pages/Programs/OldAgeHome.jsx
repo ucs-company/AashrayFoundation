@@ -2,13 +2,14 @@ import { useEffect, useRef } from "react";
 import "./OldAgeHome.css";
 
 const galleryImages = [
-  { id: 1, src: "/images/gallery/sahara1.jpg", alt: "Elderly care" },
-  { id: 2, src: "/images/gallery/sahara2.jpg", alt: "Quality time" },
-  { id: 3, src: "/images/gallery/sahara3.jpg", alt: "Celebrations" },
-  { id: 4, src: "/images/gallery/sahara4.jpg", alt: "Community support" },
-  { id: 5, src: "https://images.unsplash.com/photo-1516307365426-bea591f05011?w=600&h=400&fit=crop", alt: "Golden years" },
-  { id: 6, src: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=600&h=400&fit=crop", alt: "Dignity and respect" },
+  { id: 1, src: "/images/oldage/img1.jpg", alt: "Elderly Care" },
+  { id: 2, src: "/images/oldage/img2.jpg", alt: "Quality Time" },
+  { id: 3, src: "/images/oldage/img3.jpg", alt: "Celebrations" },
+  { id: 4, src: "/images/oldage/img4.jpg", alt: "Community Support" },
+  { id: 5, src: "/images/oldage/img5.jpg", alt: "Golden Years" },
+  { id: 6, src: "/images/oldage/img6.jpg", alt: "Dignity And Respect" },
 ];
+
 
 const missions = [
   {
@@ -86,7 +87,7 @@ export default function OldAgeHome() {
             </div>
             <div className="oldage-intro-image">
               <img
-                src="https://images.unsplash.com/photo-1516307365426-bea591f05011?w=600&h=500&fit=crop"
+                src="/images/oldage/img1.jpg"
                 alt="Elderly care"
               />
             </div>

@@ -2,12 +2,12 @@ import { useEffect, useRef } from "react";
 import "./JalProject.css";
 
 const galleryImages = [
-  { id: 1, src: "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600&h=400&fit=crop", alt: "Clean drinking water" },
-  { id: 2, src: "https://images.unsplash.com/photo-1569163139599-0f4517e36f51?w=600&h=400&fit=crop", alt: "Water purification" },
-  { id: 3, src: "https://images.unsplash.com/photo-1534928140790-3e4f6140e29a?w=600&h=400&fit=crop", alt: "Community water access" },
-  { id: 4, src: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=400&fit=crop", alt: "Water facility installation" },
-  { id: 5, src: "https://images.unsplash.com/photo-1527430253228-e93688616381?w=600&h=400&fit=crop", alt: "Clean water distribution" },
-  { id: 6, src: "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=600&h=400&fit=crop", alt: "Children drinking clean water" },
+  { id: 1, src: "/images/jal/img1.jpg", alt: "Clean Drinking Water"},
+  { id: 2, src: "/images/jal/img2.jpg", alt: "Water Purification"},
+  { id: 3, src: "/images/jal/img3.jpg", alt: "Community Water Access"},
+  { id: 4, src: "/images/jal/img4.jpg", alt: "Water Facility Installation"},
+  { id: 5, src: "/images/jal/img5.jpg", alt: "Clean Water Distribution"},
+  { id: 6, src: "/images/jal/img6.jpg", alt: "Children Drinking Clean Water"},
 ];
 
 const missions = [
@@ -52,11 +52,11 @@ export default function JalProject() {
       <section className="jal-hero">
         <div className="jal-overlay">
           <div className="jal-hero-content">
-            <span className="jal-hero-tag" ref={(el) => (sectionRefs.current[0] = el)}>PROJECT JAL</span>
-            <h1 ref={(el) => (sectionRefs.current[1] = el)}>Ensuring Access to<br />Clean Drinking Water</h1>
+            <span className="jal-hero-tag" ref={(el) => (sectionRefs.current[0] = el)}></span>
+            <h1 ref={(el) => (sectionRefs.current[1] = el)}><br /></h1>
             <p ref={(el) => (sectionRefs.current[2] = el)}>
-              Dedicated to providing clean drinking water to underprivileged communities across
-              Mumbai, New Mumbai, and Thane — because clean water is a fundamental human right.
+              {/* Dedicated to providing clean drinking water to underprivileged communities across
+              Mumbai, New Mumbai, and Thane — because clean water is a fundamental human right. */}
             </p>
           </div>
         </div>
@@ -90,10 +90,11 @@ export default function JalProject() {
               </p>
             </div>
             <div className="jal-intro-image">
-              <img
-                src="https://images.unsplash.com/photo-1569163139599-0f4517e36f51?w=600&h=500&fit=crop"
-                alt="Clean water"
-              />
+                <img
+                  src="/images/jal/img1.jpg"
+                  alt="Clean Water"
+                />
+
             </div>
           </div>
         </div>
