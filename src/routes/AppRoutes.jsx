@@ -9,6 +9,8 @@ import Contact from '../pages/Contact/Contact';
 import Medical from '../pages/Programs/Medical';
 import Education from '../pages/Programs/Education';
 import HungerDrive from '../pages/Programs/HungerDrive';
+import JalProject from '../pages/Programs/JalProject';
+import WomenEmpowerment from '../pages/Programs/WomenEmpowerment';
 import MedicalSupport from '../pages/Appeals/AppealsMedical';
 // import Appealsfoodgrains from '../pages/Appeals/Appealsfoodgrains';
 // import Appealseducation from '../pages/Appeals/Appealseducation';
@@ -21,9 +23,9 @@ function AppRoutes() {
       <Route path="/programs" element={<Programs />} />
       <Route path="/programs/medical" element={<Medical />} />
       <Route path="/programs/education" element={<Education />} />
-      <Route path="/programs/women-empowerment" element={<Programs />} />
+      <Route path="/programs/women-empowerment" element={<WomenEmpowerment />} />
       <Route path="/programs/zero-hunger-drive" element={<HungerDrive />} />
-      <Route path="/programs/jal-project" element={<Programs />} />
+      <Route path="/programs/jal-project" element={<JalProject />} />
       <Route path="/programs/orphanage" element={<Programs />} />
       <Route path="/programs/old-age-home" element={<Programs />} />
 

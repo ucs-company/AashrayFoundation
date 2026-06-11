@@ -52,12 +52,7 @@ export default function Education() {
       <section className="edu-hero">
         <div className="edu-overlay">
           <div className="edu-hero-content">
-            <span className="edu-hero-tag" ref={(el) => (sectionRefs.current[0] = el)}>PROJECT VIDHYALAY</span>
-            <h1 ref={(el) => (sectionRefs.current[1] = el)}>Illuminating Minds,<br />Transforming Lives</h1>
-            <p ref={(el) => (sectionRefs.current[2] = el)}>
-              Breaking the cycle of illiteracy and poverty — ensuring every underprivileged child,
-              every slum dweller, and every orphaned child has the opportunity to receive a quality education.
-            </p>
+           
           </div>
         </div>
       </section>
