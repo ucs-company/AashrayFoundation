@@ -53,11 +53,11 @@ export default function OldAgeHome() {
       <section className="oldage-hero">
         <div className="oldage-overlay">
           <div className="oldage-hero-content">
-            <span className="oldage-hero-tag" ref={(el) => (sectionRefs.current[0] = el)}>PROJECT SAHARA</span>
-            <h1 ref={(el) => (sectionRefs.current[1] = el)}>Empowering Elder Lives<br />with Dignity</h1>
+            <span className="oldage-hero-tag" ref={(el) => (sectionRefs.current[0] = el)}></span>
+            <h1 ref={(el) => (sectionRefs.current[1] = el)}><br /></h1>
             <p ref={(el) => (sectionRefs.current[2] = el)}>
-              We envision a society where our seniors have the right to an active, healthy,
-              and dignified life, regardless of their circumstances.
+              {/* We envision a society where our seniors have the right to an active, healthy,
+              and dignified life, regardless of their circumstances. */}
             </p>
           </div>
         </div>

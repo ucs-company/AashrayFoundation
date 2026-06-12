@@ -2,12 +2,13 @@ import { useEffect, useRef } from "react";
 import "./PashuPremi.css";
 
 const galleryImages = [
-  { id: 1, src: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&h=400&fit=crop", alt: "Stray animal care" },
-  { id: 2, src: "https://images.unsplash.com/photo-1548767797-d8c844163c4c?w=600&h=400&fit=crop", alt: "Animal rescue" },
-  { id: 3, src: "https://images.unsplash.com/photo-1604848698039-c6c6c2d588ca?w=600&h=400&fit=crop", alt: "Veterinary care" },
-  { id: 4, src: "https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=600&h=400&fit=crop", alt: "Animal compassion" },
-  { id: 5, src: "https://images.unsplash.com/photo-1543852786-1cf6624b9987?w=600&h=400&fit=crop", alt: "Pet care" },
-  { id: 6, src: "https://images.unsplash.com/photo-1479065476818-4242acb0ac3f?w=600&h=400&fit=crop", alt: "Shelter support" },
+
+  { id: 1, src: "/images/Pashu/img1.jpg", alt: "Stray Animal Care" },
+  { id: 2, src: "/images/Pashu/img2.jpg", alt: "Animal Rescue" },
+  { id: 3, src: "/images/Pashu/img3.jpg", alt: "Veterinary Care" },
+  { id: 4, src: "/images/Pashu/img4.jpg", alt: "Animal Compassion" },
+  { id: 5, src: "/images/Pashu/img5.jpg", alt: "Pet Care" },
+  { id: 6, src: "/images/Pashu/img6.jpg", alt: "Shelter Support" },
 ];
 
 const missions = [
@@ -60,12 +61,12 @@ export default function PashuPremi() {
       <section className="pashu-hero">
         <div className="pashu-overlay">
           <div className="pashu-hero-content">
-            <span className="pashu-hero-tag" ref={(el) => (sectionRefs.current[0] = el)}>PROJECT PASHU PREMI</span>
-            <h1 ref={(el) => (sectionRefs.current[1] = el)}>Empowering Compassion<br />for Every Living Being</h1>
+            <span className="pashu-hero-tag" ref={(el) => (sectionRefs.current[0] = el)}></span>
+            <h1 ref={(el) => (sectionRefs.current[1] = el)}><br /></h1>
             <p ref={(el) => (sectionRefs.current[2] = el)}>
-              We believe that every animal deserves love, safety, nourishment, and compassionate care.
+              {/* We believe that every animal deserves love, safety, nourishment, and compassionate care.
               Through this project, we strive to create a more humane society where animals are
-              treated with kindness and respect.
+              treated with kindness and respect. */}
             </p>
           </div>
         </div>
@@ -96,7 +97,7 @@ export default function PashuPremi() {
             </div>
             <div className="pashu-intro-image">
               <img
-                src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&h=500&fit=crop"
+                src="/images/Pashu/img1.jpg"
                 alt="Stray animal care"
               />
             </div>
