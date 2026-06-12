@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "./HungerDrive.css";
 
 const galleryImages = [
@@ -48,25 +49,28 @@ export default function HungerDrive() {
   }, []);
 
   return (
-    <div className="hunger-page">
-      <section className="hunger-hero">
-        <div className="hunger-overlay">
-          <div className="hunger-hero-content">
-            {/* <span className="hunger-hero-tag" ref={(el) => (sectionRefs.current[0] = el)}>PROJECT ZERO HUNGER DRIVE</span> */}
-            {/* <h1 ref={(el) => (sectionRefs.current[1] = el)}>Ending Hunger,<br />One Meal at a Time</h1> */}
+    <div className="hunger-page" style={{ '--hero-img': 'url(/images/ZeroHunger/Hunger.jpg)' }}>
+      {/* HERO */}
+      <section className="detail-hero">
+        <div className="detail-hero-shape detail-hero-shape--1" />
+        <div className="detail-hero-shape detail-hero-shape--2" />
+        <div className="section-container">
+          <div className="detail-hero-content">
+            <span className="detail-hero-badge glass" ref={(el) => (sectionRefs.current[0] = el)}>PROJECT ZERO HUNGER DRIVE</span>
+            <h1 ref={(el) => (sectionRefs.current[1] = el)}>Ending Hunger,<br />One Meal at a Time</h1>
             <p ref={(el) => (sectionRefs.current[2] = el)}>
-              {/* Dedicated to providing essential food to those in dire need — because no one should
-              go to bed hungry in Mumbai's slums or anywhere in India. */}
+              Dedicated to providing essential food to those in dire need — because no one should go to bed hungry.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="hunger-intro" ref={(el) => (sectionRefs.current[3] = el)}>
-        <div className="container">
-          <div className="hunger-intro-grid">
-            <div className="hunger-intro-text">
-              <span className="section-tag">WELCOME TO</span>
+      {/* INTRO */}
+      <section className="detail-intro" ref={(el) => (sectionRefs.current[3] = el)}>
+        <div className="section-container">
+          <div className="detail-intro-grid">
+            <div className="detail-intro-text">
+              <span className="detail-section-tag">WELCOME TO</span>
               <h2>Project Zero Hunger Drive</h2>
               <p>
                 At <strong>AFLF (Ashray for Life Foundation)</strong>, Project "Zero Hunger Drive" is dedicated to
@@ -79,31 +83,31 @@ export default function HungerDrive() {
                 Line (BPL) families, senior citizens, Divyang members, visually impaired individuals, as well as
                 those who are homeless and in need in Mumbai.
               </p>
-              <p className="hunger-quote">
+              <p className="detail-quote">
                 "There are miles to go before we AFLF sleep — because in Mumbai's slums, many people are left hungry.
                 We are hungry for change, and together, we can feed the hungry."
               </p>
             </div>
-            <div className="hunger-intro-image">
-              <img
-                src="/images/ZeroHunger/img1.jpg"
-                alt="Food distribution"
-              />
+            <div className="detail-intro-image">
+              <div className="detail-image-frame glass">
+                <img src="/images/ZeroHunger/img1.jpg" alt="Food distribution" />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="hunger-mission" ref={(el) => (sectionRefs.current[4] = el)}>
-        <div className="container">
+      {/* MISSION */}
+      <section className="detail-mission" ref={(el) => (sectionRefs.current[4] = el)}>
+        <div className="section-container">
           <h2>Our Mission</h2>
-          <p className="section-subtitle">
+          <p className="detail-section-subtitle">
             Through Project Zero Hunger Drive, we are fighting to end hunger and malnutrition
           </p>
-          <div className="hunger-mission-grid">
+          <div className="detail-mission-grid">
             {missions.map((m, i) => (
-              <div key={i} className="hunger-mission-card">
-                <div className="hunger-mission-icon">{String(i + 1).padStart(2, "0")}</div>
+              <div key={i} className="detail-mission-card glass">
+                <div className="detail-mission-num">{String(i + 1).padStart(2, "0")}</div>
                 <h3>{m.title}</h3>
                 <p>{m.desc}</p>
               </div>
@@ -112,10 +116,11 @@ export default function HungerDrive() {
         </div>
       </section>
 
-      <section className="hunger-impact" ref={(el) => (sectionRefs.current[5] = el)}>
-        <div className="container">
-          <div className="hunger-impact-content">
-            <span className="section-tag">OUR IMPACT</span>
+      {/* IMPACT */}
+      <section className="detail-impact" ref={(el) => (sectionRefs.current[5] = el)}>
+        <div className="section-container">
+          <div className="detail-impact-content">
+            <span className="detail-section-tag">OUR IMPACT</span>
             <h2>Fighting Hunger, Restoring Hope</h2>
             <p>
               Through Project Zero Hunger Drive, we have witnessed the transformation of lives. Families who once
@@ -130,40 +135,54 @@ export default function HungerDrive() {
         </div>
       </section>
 
-      <section className="hunger-stats" ref={(el) => (sectionRefs.current[6] = el)}>
-        <div className="hunger-stats-grid">
-          <div className="hunger-stat">
-            <span className="hunger-stat-number">10,000+</span>
-            <span className="hunger-stat-label">Food Kits Distributed</span>
+      {/* STATS */}
+      <section className="detail-stats" ref={(el) => (sectionRefs.current[6] = el)}>
+        <div className="detail-stats-grid">
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">10,000+</span>
+            <span className="detail-stat-label">Food Kits Distributed</span>
           </div>
-          <div className="hunger-stat">
-            <span className="hunger-stat-number">5,000+</span>
-            <span className="hunger-stat-label">Families Supported</span>
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">5,000+</span>
+            <span className="detail-stat-label">Families Supported</span>
           </div>
-          <div className="hunger-stat">
-            <span className="hunger-stat-number">50+</span>
-            <span className="hunger-stat-label">Slums Reached</span>
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">50+</span>
+            <span className="detail-stat-label">Slums Reached</span>
           </div>
-          <div className="hunger-stat">
-            <span className="hunger-stat-number">24/7</span>
-            <span className="hunger-stat-label">Community Service</span>
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">24/7</span>
+            <span className="detail-stat-label">Community Service</span>
           </div>
         </div>
       </section>
 
-      <section className="hunger-gallery" ref={(el) => (sectionRefs.current[7] = el)}>
-        <div className="container">
+      {/* GALLERY */}
+      <section className="detail-gallery" ref={(el) => (sectionRefs.current[7] = el)}>
+        <div className="section-container">
           <h2>Moments of Hope</h2>
-          <p className="section-subtitle">Every meal shared is a step toward a hunger-free world</p>
-          <div className="hunger-gallery-grid">
+          <p className="detail-section-subtitle">Every meal shared is a step toward a hunger-free world</p>
+          <div className="detail-gallery-grid">
             {galleryImages.map((img) => (
-              <div key={img.id} className="hunger-gallery-item">
+              <div key={img.id} className="detail-gallery-item glass">
                 <img src={img.src} alt={img.alt} />
-                <div className="hunger-gallery-overlay">
+                <div className="detail-gallery-overlay">
                   <span>{img.alt}</span>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="detail-cta">
+        <div className="section-container">
+          <h2>Support Our Mission</h2>
+          <p>Your support can help us feed more families and end hunger in our communities.</p>
+          <div className="detail-cta-btns">
+            <Link to="/donate" className="btn-primary-glass">Donate Now</Link>
+            <Link to="/volunteer" className="btn-secondary-glass">Become a Volunteer</Link>
           </div>
         </div>
       </section>

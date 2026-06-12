@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "./Orphanage.css";
 
 const galleryImages = [
@@ -48,25 +49,28 @@ export default function Orphanage() {
   }, []);
 
   return (
-    <div className="orphanage-page">
-      <section className="orphanage-hero">
-        <div className="orphanage-overlay">
-          <div className="orphanage-hero-content">
-            <span className="orphanage-hero-tag" ref={(el) => (sectionRefs.current[0] = el)}>PROJECT ASHRA</span>
+    <div className="orphanage-page" style={{ '--hero-img': 'url(https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?w=1200&h=600&fit=crop)' }}>
+      {/* HERO */}
+      <section className="detail-hero">
+        <div className="detail-hero-shape detail-hero-shape--1" />
+        <div className="detail-hero-shape detail-hero-shape--2" />
+        <div className="section-container">
+          <div className="detail-hero-content">
+            <span className="detail-hero-badge glass" ref={(el) => (sectionRefs.current[0] = el)}>PROJECT ASHRA</span>
             <h1 ref={(el) => (sectionRefs.current[1] = el)}>Empowering Futures,<br />One Child at a Time</h1>
             <p ref={(el) => (sectionRefs.current[2] = el)}>
-              A haven of free education for underprivileged children — providing shelter,
-              learning, and hope for a brighter tomorrow.
+              A haven of free education for underprivileged children — providing shelter, learning, and hope for a brighter tomorrow.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="orphanage-intro" ref={(el) => (sectionRefs.current[3] = el)}>
-        <div className="container">
-          <div className="orphanage-intro-grid">
-            <div className="orphanage-intro-text">
-              <span className="section-tag">WELCOME TO</span>
+      {/* INTRO */}
+      <section className="detail-intro" ref={(el) => (sectionRefs.current[3] = el)}>
+        <div className="section-container">
+          <div className="detail-intro-grid">
+            <div className="detail-intro-text">
+              <span className="detail-section-tag">WELCOME TO</span>
               <h2>Project Ashra</h2>
               <p>
                 The <strong>AFLF (Ashray for Life Foundation)</strong>, also recognized as
@@ -81,31 +85,31 @@ export default function Orphanage() {
                 the transformative power of education — every child deserves the opportunity to
                 learn, grow, and build a brighter future.
               </p>
-              <p className="orphanage-quote">
+              <p className="detail-quote">
                 "We envision a world where every child has the chance to break free from the
                 cycle of poverty through education."
               </p>
             </div>
-            <div className="orphanage-intro-image">
-              <img
-                src="https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?w=600&h=500&fit=crop"
-                alt="Children at shelter"
-              />
+            <div className="detail-intro-image">
+              <div className="detail-image-frame glass">
+                <img src="https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?w=600&h=500&fit=crop" alt="Children at shelter" />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="orphanage-commitment" ref={(el) => (sectionRefs.current[4] = el)}>
-        <div className="container">
+      {/* COMMITMENT */}
+      <section className="detail-mission" ref={(el) => (sectionRefs.current[4] = el)}>
+        <div className="section-container">
           <h2>Our Commitment</h2>
-          <p className="section-subtitle">
+          <p className="detail-section-subtitle">
             Through Project Ashra, we are dedicated to creating lasting change for every child
           </p>
-          <div className="orphanage-commitment-grid">
+          <div className="detail-mission-grid">
             {commitments.map((m, i) => (
-              <div key={i} className="orphanage-commitment-card">
-                <div className="orphanage-commitment-icon">{String(i + 1).padStart(2, "0")}</div>
+              <div key={i} className="detail-mission-card glass">
+                <div className="detail-mission-num">{String(i + 1).padStart(2, "0")}</div>
                 <h3>{m.title}</h3>
                 <p>{m.desc}</p>
               </div>
@@ -114,10 +118,11 @@ export default function Orphanage() {
         </div>
       </section>
 
-      <section className="orphanage-impact" ref={(el) => (sectionRefs.current[5] = el)}>
-        <div className="container">
-          <div className="orphanage-impact-content">
-            <span className="section-tag">OUR IMPACT</span>
+      {/* IMPACT */}
+      <section className="detail-impact" ref={(el) => (sectionRefs.current[5] = el)}>
+        <div className="section-container">
+          <div className="detail-impact-content">
+            <span className="detail-section-tag">OUR IMPACT</span>
             <h2>Shaping Brighter Tomorrows</h2>
             <p>
               Through Project Ashra, we have witnessed the transformation of young lives.
@@ -134,36 +139,38 @@ export default function Orphanage() {
         </div>
       </section>
 
-      <section className="orphanage-stats" ref={(el) => (sectionRefs.current[6] = el)}>
-        <div className="orphanage-stats-grid">
-          <div className="orphanage-stat">
-            <span className="orphanage-stat-number">200+</span>
-            <span className="orphanage-stat-label">Children Supported</span>
+      {/* STATS */}
+      <section className="detail-stats" ref={(el) => (sectionRefs.current[6] = el)}>
+        <div className="detail-stats-grid">
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">200+</span>
+            <span className="detail-stat-label">Children Supported</span>
           </div>
-          <div className="orphanage-stat">
-            <span className="orphanage-stat-number">1000+</span>
-            <span className="orphanage-stat-label">Education Kits Distributed</span>
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">1000+</span>
+            <span className="detail-stat-label">Education Kits Distributed</span>
           </div>
-          <div className="orphanage-stat">
-            <span className="orphanage-stat-number">10+</span>
-            <span className="orphanage-stat-label">Years of Service</span>
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">10+</span>
+            <span className="detail-stat-label">Years of Service</span>
           </div>
-          <div className="orphanage-stat">
-            <span className="orphanage-stat-number">24/7</span>
-            <span className="orphanage-stat-label">Shelter & Care</span>
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">24/7</span>
+            <span className="detail-stat-label">Shelter & Care</span>
           </div>
         </div>
       </section>
 
-      <section className="orphanage-gallery" ref={(el) => (sectionRefs.current[7] = el)}>
-        <div className="container">
+      {/* GALLERY */}
+      <section className="detail-gallery" ref={(el) => (sectionRefs.current[7] = el)}>
+        <div className="section-container">
           <h2>Moments of Joy</h2>
-          <p className="section-subtitle">Every smile tells a story of hope and transformation</p>
-          <div className="orphanage-gallery-grid">
+          <p className="detail-section-subtitle">Every smile tells a story of hope and transformation</p>
+          <div className="detail-gallery-grid">
             {galleryImages.map((img) => (
-              <div key={img.id} className="orphanage-gallery-item">
+              <div key={img.id} className="detail-gallery-item glass">
                 <img src={img.src} alt={img.alt} />
-                <div className="orphanage-gallery-overlay">
+                <div className="detail-gallery-overlay">
                   <span>{img.alt}</span>
                 </div>
               </div>
@@ -172,6 +179,17 @@ export default function Orphanage() {
         </div>
       </section>
 
+      {/* CTA */}
+      <section className="detail-cta">
+        <div className="section-container">
+          <h2>Support Our Mission</h2>
+          <p>Your support can help us provide education, shelter, and hope to more children in need.</p>
+          <div className="detail-cta-btns">
+            <Link to="/donate" className="btn-primary-glass">Donate Now</Link>
+            <Link to="/volunteer" className="btn-secondary-glass">Become a Volunteer</Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

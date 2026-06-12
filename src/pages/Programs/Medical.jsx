@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "./Medical.css";
 
 const galleryImages = [
@@ -48,11 +49,14 @@ export default function Medical() {
   }, []);
 
   return (
-    <div className="medical-page">
-      <section className="medical-hero1">
-        <div className="medical-overlay">
-          <div className="medical-hero-content">
-            <span className="medical-hero-tag" ref={(el) => (sectionRefs.current[0] = el)}>PROJECT LIFE-LINE</span>
+    <div className="medical-page" style={{ '--hero-img': 'url(https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1200&h=600&fit=crop)' }}>
+      {/* HERO */}
+      <section className="detail-hero">
+        <div className="detail-hero-shape detail-hero-shape--1" />
+        <div className="detail-hero-shape detail-hero-shape--2" />
+        <div className="section-container">
+          <div className="detail-hero-content">
+            <span className="detail-hero-badge glass" ref={(el) => (sectionRefs.current[0] = el)}>PROJECT LIFE-LINE</span>
             <h1 ref={(el) => (sectionRefs.current[1] = el)}>Saving Lives,<br />One Surgery at a Time</h1>
             <p ref={(el) => (sectionRefs.current[2] = el)}>
               Every heartbeat counts. Project Lifeline is our unwavering commitment to providing
@@ -62,11 +66,12 @@ export default function Medical() {
         </div>
       </section>
 
-      <section className="medical-intro" ref={(el) => (sectionRefs.current[3] = el)}>
-        <div className="container">
-          <div className="medical-intro-grid">
-            <div className="medical-intro-text">
-              <span className="section-tag">WELCOME TO</span>
+      {/* INTRO */}
+      <section className="detail-intro" ref={(el) => (sectionRefs.current[3] = el)}>
+        <div className="section-container">
+          <div className="detail-intro-grid">
+            <div className="detail-intro-text">
+              <span className="detail-section-tag">WELCOME TO</span>
               <h2>Project Life-Line</h2>
               <p>
                 At <strong>AFLF (Ashray for Life Foundation)</strong>, we firmly believe that
@@ -80,31 +85,34 @@ export default function Medical() {
                 of survival. Project Lifeline steps in as their lifeline, ensuring that no child
                 faces the threat of critical illness due to financial limitations.
               </p>
-              <p className="medical-quote">
+              <p className="detail-quote">
                 "One surgery, one life saved — it's not just about surgeries; it's about giving
                 children the precious gift of life itself."
               </p>
             </div>
-            <div className="medical-intro-image">
-              <img
-                src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=600&h=500&fit=crop"
-                alt="Medical care"
-              />
+            <div className="detail-intro-image">
+              <div className="detail-image-frame glass">
+                <img
+                  src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=600&h=500&fit=crop"
+                  alt="Medical care"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="medical-mission" ref={(el) => (sectionRefs.current[4] = el)}>
-        <div className="container">
+      {/* MISSION */}
+      <section className="detail-mission" ref={(el) => (sectionRefs.current[4] = el)}>
+        <div className="section-container">
           <h2>Our Mission</h2>
-          <p className="section-subtitle">
+          <p className="detail-section-subtitle">
             Through Project Lifeline, we are dedicated to saving lives and restoring hope
           </p>
-          <div className="medical-mission-grid">
+          <div className="detail-mission-grid">
             {missions.map((m, i) => (
-              <div key={i} className="medical-mission-card">
-                <div className="medical-mission-icon">{String(i + 1).padStart(2, "0")}</div>
+              <div key={i} className="detail-mission-card glass">
+                <div className="detail-mission-num">{String(i + 1).padStart(2, "0")}</div>
                 <h3>{m.title}</h3>
                 <p>{m.desc}</p>
               </div>
@@ -113,10 +121,11 @@ export default function Medical() {
         </div>
       </section>
 
-      <section className="medical-impact" ref={(el) => (sectionRefs.current[5] = el)}>
-        <div className="container">
-          <div className="medical-impact-content">
-            <span className="section-tag">OUR IMPACT</span>
+      {/* IMPACT */}
+      <section className="detail-impact" ref={(el) => (sectionRefs.current[5] = el)}>
+        <div className="section-container">
+          <div className="detail-impact-content">
+            <span className="detail-section-tag">OUR IMPACT</span>
             <h2>Giving Families a Second Chance</h2>
             <p>
               Through Project Lifeline, we have witnessed the miracle of life restored. Children
@@ -132,40 +141,54 @@ export default function Medical() {
         </div>
       </section>
 
-      <section className="medical-stats" ref={(el) => (sectionRefs.current[6] = el)}>
-        <div className="medical-stats-grid">
-          <div className="medical-stat">
-            <span className="medical-stat-number">500+</span>
-            <span className="medical-stat-label">Lives Impacted</span>
+      {/* STATS */}
+      <section className="detail-stats" ref={(el) => (sectionRefs.current[6] = el)}>
+        <div className="detail-stats-grid">
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">500+</span>
+            <span className="detail-stat-label">Lives Impacted</span>
           </div>
-          <div className="medical-stat">
-            <span className="medical-stat-number">100+</span>
-            <span className="medical-stat-label">Surgeries Supported</span>
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">100+</span>
+            <span className="detail-stat-label">Surgeries Supported</span>
           </div>
-          <div className="medical-stat">
-            <span className="medical-stat-number">200+</span>
-            <span className="medical-stat-label">Families Helped</span>
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">200+</span>
+            <span className="detail-stat-label">Families Helped</span>
           </div>
-          <div className="medical-stat">
-            <span className="medical-stat-number">24/7</span>
-            <span className="medical-stat-label">Emergency Care</span>
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">24/7</span>
+            <span className="detail-stat-label">Emergency Care</span>
           </div>
         </div>
       </section>
 
-      <section className="medical-gallery" ref={(el) => (sectionRefs.current[7] = el)}>
-        <div className="container">
+      {/* GALLERY */}
+      <section className="detail-gallery" ref={(el) => (sectionRefs.current[7] = el)}>
+        <div className="section-container">
           <h2>Moments of Healing</h2>
-          <p className="section-subtitle">Every life saved is a testament to the power of compassion</p>
-          <div className="medical-gallery-grid">
+          <p className="detail-section-subtitle">Every life saved is a testament to the power of compassion</p>
+          <div className="detail-gallery-grid">
             {galleryImages.map((img) => (
-              <div key={img.id} className="medical-gallery-item">
+              <div key={img.id} className="detail-gallery-item glass">
                 <img src={img.src} alt={img.alt} />
-                <div className="medical-gallery-overlay">
+                <div className="detail-gallery-overlay">
                   <span>{img.alt}</span>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="detail-cta">
+        <div className="section-container">
+          <h2>Support Our Mission</h2>
+          <p>Your support can help us save more lives and give families a second chance.</p>
+          <div className="detail-cta-btns">
+            <Link to="/donate" className="btn-primary-glass">Donate Now</Link>
+            <Link to="/volunteer" className="btn-secondary-glass">Become a Volunteer</Link>
           </div>
         </div>
       </section>

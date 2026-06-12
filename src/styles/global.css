@@ -38,6 +38,5 @@ ul { list-style: none; }
 }
 
 .asymmetric-card {
-  border-top-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-radius: 25px;
 }
