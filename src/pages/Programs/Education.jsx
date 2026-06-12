@@ -1,37 +1,14 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "./Education.css";
 
 const galleryImages = [
-  {
-    id: 1,
-    src: "/images/education/Education2.jpg",
-    alt: "Education Support"
-  },
-  {
-    id: 2,
-    src: "/images/education/Education3.jpg",
-    alt: "Children Learning"
-  },
-  {
-    id: 3,
-    src: "/images/education/Education4.jpg",
-    alt: "School Activities"
-  },
-  {
-    id: 4,
-    src: "/images/education/Education5.jpg",
-    alt: "Educational Materials"
-  },
-  {
-    id: 5,
-    src: "/images/education/Education6.jpg",
-    alt: "Classroom Support"
-  },
-  {
-    id: 6,
-    src: "/images/education/Education1.jpg",
-    alt: "Students Learning"
-  },
+  { id: 1, src: "/images/education/Education2.jpg", alt: "Education Support" },
+  { id: 2, src: "/images/education/Education3.jpg", alt: "Children Learning" },
+  { id: 3, src: "/images/education/Education4.jpg", alt: "School Activities" },
+  { id: 4, src: "/images/education/Education5.jpg", alt: "Educational Materials" },
+  { id: 5, src: "/images/education/Education6.jpg", alt: "Classroom Support" },
+  { id: 6, src: "/images/education/Education1.jpg", alt: "Students Learning" },
 ];
 
 const missions = [
@@ -72,20 +49,28 @@ export default function Education() {
   }, []);
 
   return (
-    <div className="education-page">
-      <section className="edu-hero">
-        <div className="edu-overlay">
-          <div className="edu-hero-content">
-           
+    <div className="education-page" style={{ '--hero-img': 'url(/images/education/Educationhome.jpg)' }}>
+      {/* HERO */}
+      <section className="detail-hero">
+        <div className="detail-hero-shape detail-hero-shape--1" />
+        <div className="detail-hero-shape detail-hero-shape--2" />
+        <div className="section-container">
+          <div className="detail-hero-content">
+            <span className="detail-hero-badge glass" ref={(el) => (sectionRefs.current[0] = el)}>PROJECT VIDHYALAY</span>
+            <h1 ref={(el) => (sectionRefs.current[1] = el)}>Education for All,<br />Hope for Every Child</h1>
+            <p ref={(el) => (sectionRefs.current[2] = el)}>
+              Breaking the cycle of illiteracy and poverty by ensuring every underprivileged child has access to quality education.
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="edu-intro" ref={(el) => (sectionRefs.current[3] = el)}>
-        <div className="container">
-          <div className="edu-intro-grid">
-            <div className="edu-intro-text">
-              <span className="section-tag">WELCOME TO</span>
+      {/* INTRO */}
+      <section className="detail-intro" ref={(el) => (sectionRefs.current[3] = el)}>
+        <div className="section-container">
+          <div className="detail-intro-grid">
+            <div className="detail-intro-text">
+              <span className="detail-section-tag">WELCOME TO</span>
               <h2>Project Vidhyalay</h2>
               <p>
                 At <strong>AFLF (Ashray for Life Foundation)</strong>, we are committed to breaking the cycle
@@ -98,26 +83,26 @@ export default function Education() {
                 right — it is the most powerful tool to transform lives, families, and entire communities.
               </p>
             </div>
-            <div className="edu-intro-image">
-              <img
-                src="/images/education/Education1.jpg"
-                alt=""
-              />
+            <div className="detail-intro-image">
+              <div className="detail-image-frame glass">
+                <img src="/images/education/Education1.jpg" alt="Students Learning" />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="edu-mission" ref={(el) => (sectionRefs.current[4] = el)}>
-        <div className="container">
+      {/* MISSION */}
+      <section className="detail-mission" ref={(el) => (sectionRefs.current[4] = el)}>
+        <div className="section-container">
           <h2>Our Mission</h2>
-          <p className="section-subtitle">
+          <p className="detail-section-subtitle">
             Through Project Vidhyalay, we are dedicated to creating lasting change
           </p>
-          <div className="edu-mission-grid">
+          <div className="detail-mission-grid">
             {missions.map((m, i) => (
-              <div key={i} className="edu-mission-card">
-                <div className="edu-mission-icon">{String(i + 1).padStart(2, "0")}</div>
+              <div key={i} className="detail-mission-card glass">
+                <div className="detail-mission-num">{String(i + 1).padStart(2, "0")}</div>
                 <h3>{m.title}</h3>
                 <p>{m.desc}</p>
               </div>
@@ -126,10 +111,11 @@ export default function Education() {
         </div>
       </section>
 
-      <section className="edu-impact" ref={(el) => (sectionRefs.current[5] = el)}>
-        <div className="container">
-          <div className="edu-impact-content">
-            <span className="section-tag">OUR IMPACT</span>
+      {/* IMPACT */}
+      <section className="detail-impact" ref={(el) => (sectionRefs.current[5] = el)}>
+        <div className="section-container">
+          <div className="detail-impact-content">
+            <span className="detail-section-tag">OUR IMPACT</span>
             <h2>Transforming Lives Through Education</h2>
             <p>
               Through Project Vidhyalay, we have witnessed the transformation of lives. We've seen
@@ -146,36 +132,38 @@ export default function Education() {
         </div>
       </section>
 
-      <section className="edu-stats" ref={(el) => (sectionRefs.current[6] = el)}>
-        <div className="edu-stats-grid">
-          <div className="edu-stat">
-            <span className="edu-stat-number">500+</span>
-            <span className="edu-stat-label">Children Educated</span>
+      {/* STATS */}
+      <section className="detail-stats" ref={(el) => (sectionRefs.current[6] = el)}>
+        <div className="detail-stats-grid">
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">500+</span>
+            <span className="detail-stat-label">Children Educated</span>
           </div>
-          <div className="edu-stat">
-            <span className="edu-stat-number">200+</span>
-            <span className="edu-stat-label">Women Empowered</span>
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">200+</span>
+            <span className="detail-stat-label">Women Empowered</span>
           </div>
-          <div className="edu-stat">
-            <span className="edu-stat-number">50+</span>
-            <span className="edu-stat-label">Communities Reached</span>
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">50+</span>
+            <span className="detail-stat-label">Communities Reached</span>
           </div>
-          <div className="edu-stat">
-            <span className="edu-stat-number">100%</span>
-            <span className="edu-stat-label">Dedicated to Change</span>
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">100%</span>
+            <span className="detail-stat-label">Dedicated to Change</span>
           </div>
         </div>
       </section>
 
-      <section className="edu-gallery" ref={(el) => (sectionRefs.current[7] = el)}>
-        <div className="container">
+      {/* GALLERY */}
+      <section className="detail-gallery" ref={(el) => (sectionRefs.current[7] = el)}>
+        <div className="section-container">
           <h2>Moments of Learning</h2>
-          <p className="section-subtitle">Every picture tells a story of hope and transformation</p>
-          <div className="edu-gallery-grid">
+          <p className="detail-section-subtitle">Every picture tells a story of hope and transformation</p>
+          <div className="detail-gallery-grid">
             {galleryImages.map((img) => (
-              <div key={img.id} className="edu-gallery-item">
+              <div key={img.id} className="detail-gallery-item glass">
                 <img src={img.src} alt={img.alt} />
-                <div className="edu-gallery-overlay">
+                <div className="detail-gallery-overlay">
                   <span>{img.alt}</span>
                 </div>
               </div>
@@ -184,7 +172,17 @@ export default function Education() {
         </div>
       </section>
 
-   
+      {/* CTA */}
+      <section className="detail-cta">
+        <div className="section-container">
+          <h2>Support Our Mission</h2>
+          <p>Your support can help us educate more children and transform more lives through learning.</p>
+          <div className="detail-cta-btns">
+            <Link to="/donate" className="btn-primary-glass">Donate Now</Link>
+            <Link to="/volunteer" className="btn-secondary-glass">Become a Volunteer</Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

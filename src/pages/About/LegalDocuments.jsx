@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./About.css";
+import "./LegalDocuments.css";
 
 const documents = [
   {
@@ -75,6 +75,7 @@ const typeColors = {
 
 function LegalDocuments() {
   const [modalDoc, setModalDoc] = useState(null);
+  const [loadError, setLoadError] = useState(false);
 
   useEffect(() => {
     if (modalDoc) {
@@ -85,49 +86,50 @@ function LegalDocuments() {
     return () => { document.body.style.overflow = ""; };
   }, [modalDoc]);
 
+  useEffect(() => {
+    setLoadError(false);
+  }, [modalDoc]);
+
   return (
-    <main className="page-about">
-      <section className="page-hero page-hero--docs">
-        <div className="hero-particles">
-          <span /><span /><span /><span /><span /><span />
-        </div>
-        <div className="container">
-          <span className="hero-badge-pill">Legal Compliance</span>
-          <h1>Legal Documents</h1>
-          <p>Official registrations, tax exemptions, and government accreditations of Ashray for Life Foundation.</p>
+    <main className="legal-page">
+      {/* HERO */}
+      <section className="legal-hero">
+        <div className="legal-hero-shape legal-hero-shape--1" />
+        <div className="legal-hero-shape legal-hero-shape--2" />
+        <div className="section-container">
+          <div className="legal-hero-content">
+            <span className="legal-hero-badge glass">Legal Compliance</span>
+            <h1>Legal Documents</h1>
+            <p>Official registrations, tax exemptions, and government accreditations of Ashray for Life Foundation.</p>
+          </div>
         </div>
       </section>
 
-      <section className="docs-section">
-        <div className="container">
-          <div className="section-label">
-            <span className="label-line"></span>
-            <span className="label-text">Certificates & Registrations</span>
-            <span className="label-line"></span>
-          </div>
-          <p className="committee-intro">
+      {/* DOCUMENTS */}
+      <section className="legal-docs">
+        <div className="section-container">
+          <h2>Certificates & Registrations</h2>
+          <p className="legal-subtitle">
             All our legal documents are publicly available for transparency. Click any document to view or download.
           </p>
-          <div className="docs-grid">
+          <div className="legal-grid">
             {documents.map((doc) => {
               const colors = typeColors[doc.type] || typeColors.Certificate;
               return (
                 <div
                   key={doc.id}
-                  className="doc-card"
-                  style={{ "--doc-bg": colors.bg, "--doc-border": colors.border, "--doc-text": colors.text }}
+                  className="legal-card glass"
+                  style={{ "--card-accent": colors.border }}
                   onClick={() => setModalDoc(doc)}
                 >
-                  <div className="doc-icon-wrap" style={{ background: colors.bg, color: colors.text }}>
+                  <div className="legal-card-icon" style={{ background: colors.bg, color: colors.text }}>
                     {iconMap[doc.type]}
                   </div>
-                  <div className="doc-body">
-                    <div className="doc-meta">
-                      <span className="doc-type" style={{ background: colors.bg, color: colors.text }}>{doc.type}</span>
-                    </div>
+                  <div className="legal-card-body">
+                    <span className="legal-card-type" style={{ background: colors.bg, color: colors.text }}>{doc.type}</span>
                     <h3>{doc.title}</h3>
                     <p>{doc.desc}</p>
-                    <span className="doc-view-link">
+                    <span className="legal-card-link">
                       View Document
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
@@ -145,28 +147,28 @@ function LegalDocuments() {
 
       {/* MODAL */}
       {modalDoc && (
-        <div className="modal-overlay" onClick={() => setModalDoc(null)}>
-          <div className="modal-wrap" onClick={(e) => e.stopPropagation()}>
-            <div className="modal-header">
-              <div className="modal-header-left">
-                <div className="modal-icon" style={{ background: typeColors[modalDoc.type]?.bg || "#e8f4fd", color: typeColors[modalDoc.type]?.text || "#1565C0" }}>
+        <div className="legal-modal-overlay" onClick={() => setModalDoc(null)}>
+          <div className="legal-modal glass" onClick={(e) => e.stopPropagation()}>
+            <div className="legal-modal-header">
+              <div className="legal-modal-header-left">
+                <div className="legal-modal-icon" style={{ background: typeColors[modalDoc.type]?.bg || "#e8f4fd", color: typeColors[modalDoc.type]?.text || "#1565C0" }}>
                   {iconMap[modalDoc.type]}
                 </div>
                 <div>
                   <h3>{modalDoc.title}</h3>
-                  <span className="modal-type" style={{ background: typeColors[modalDoc.type]?.bg || "#e8f4fd", color: typeColors[modalDoc.type]?.text || "#1565C0" }}>{modalDoc.type}</span>
+                  <span className="legal-modal-type" style={{ background: typeColors[modalDoc.type]?.bg || "#e8f4fd", color: typeColors[modalDoc.type]?.text || "#1565C0" }}>{modalDoc.type}</span>
                 </div>
               </div>
-              <div className="modal-header-actions">
-                <a href={modalDoc.file} download className="modal-download-btn">
+              <div className="legal-modal-actions">
+                <a href={modalDoc.file} download className="legal-modal-download">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
-                        <polyline points="7 10 12 15 17 10" />
-                        <line x1="12" y1="15" x2="12" y2="3" />
+                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
                   </svg>
                   Download
                 </a>
-                <button className="modal-close-btn" onClick={() => setModalDoc(null)}>
+                <button className="legal-modal-close" onClick={() => setModalDoc(null)}>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
                     <line x1="18" y1="6" x2="6" y2="18" />
                     <line x1="6" y1="6" x2="18" y2="18" />
@@ -174,16 +176,19 @@ function LegalDocuments() {
                 </button>
               </div>
             </div>
-            <div className="modal-body">
-              <iframe
-                src={modalDoc.file}
-                title={modalDoc.title}
-                className="doc-iframe"
-              />
-              <div className="doc-fallback">
+            <div className="legal-modal-body">
+              {!loadError ? (
+                <iframe
+                  src={modalDoc.file}
+                  title={modalDoc.title}
+                  className="legal-iframe"
+                  onError={() => setLoadError(true)}
+                />
+              ) : null}
+              <div className="legal-fallback" style={{ display: loadError ? "flex" : "none" }}>
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="9" y1="15" x2="15" y2="15" /></svg>
                 <p>Preview not available. Click download to view the document.</p>
-                <a href={modalDoc.file} download className="modal-download-btn">
+                <a href={modalDoc.file} download className="legal-modal-download">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
                     <polyline points="7 10 12 15 17 10" />

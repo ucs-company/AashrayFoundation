@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "./WomenEmpowerment.css";
 
 const galleryImages = [
@@ -9,6 +10,7 @@ const galleryImages = [
   { id: 5, src: "/images/NariTarang/img6.jpg", alt: "Community Support" },
   { id: 6, src: "/images/NariTarang/img1.jpg", alt: "Education For Girls" },
 ];
+
 const focusAreas = [
   {
     title: "Education for Girls",
@@ -59,20 +61,28 @@ export default function WomenEmpowerment() {
   }, []);
 
   return (
-    <div className="womens-page">
-      <section className="womens-hero">
-        <div className="womens-overlay">
-          <div className="womens-hero-content">
-           
+    <div className="womens-page" style={{ '--hero-img': 'url(/images/NariTarang/naariiiii.jpg)' }}>
+      {/* HERO */}
+      <section className="detail-hero">
+        <div className="detail-hero-shape detail-hero-shape--1" />
+        <div className="detail-hero-shape detail-hero-shape--2" />
+        <div className="section-container">
+          <div className="detail-hero-content">
+            <span className="detail-hero-badge glass" ref={(el) => (sectionRefs.current[0] = el)}>PROJECT NARI TARANG</span>
+            <h1 ref={(el) => (sectionRefs.current[1] = el)}>Empowering Women,<br />Transforming Communities</h1>
+            <p ref={(el) => (sectionRefs.current[2] = el)}>
+              Enabling women to take charge of their lives, make independent choices, and lead healthier, more fulfilling lives.
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="womens-intro" ref={(el) => (sectionRefs.current[3] = el)}>
-        <div className="container">
-          <div className="womens-intro-grid">
-            <div className="womens-intro-text">
-              <span className="section-tag">WELCOME TO</span>
+      {/* INTRO */}
+      <section className="detail-intro" ref={(el) => (sectionRefs.current[3] = el)}>
+        <div className="section-container">
+          <div className="detail-intro-grid">
+            <div className="detail-intro-text">
+              <span className="detail-section-tag">WELCOME TO</span>
               <h2>Project Nari Tarang</h2>
               <p>
                 At <strong>AFLF (Ashray for Life Foundation)</strong>, we are dedicated to the cause
@@ -86,31 +96,31 @@ export default function WomenEmpowerment() {
                 comprehensive initiatives, we light the path to independence and brighter futures
                 for women and girls.
               </p>
-              <p className="womens-quote">
+              <p className="detail-quote">
                 "Empower women, empower the world. At AFLF, we believe that every woman has the
                 power to shape her destiny."
               </p>
             </div>
-            <div className="womens-intro-image">
-              <img
-                  src="/images/NariTarang/img1.jpg"
-                  alt="Women Empowerment"
-              />
+            <div className="detail-intro-image">
+              <div className="detail-image-frame glass">
+                <img src="/images/NariTarang/img1.jpg" alt="Women Empowerment" />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="womens-focus" ref={(el) => (sectionRefs.current[4] = el)}>
-        <div className="container">
+      {/* FOCUS AREAS */}
+      <section className="detail-mission" ref={(el) => (sectionRefs.current[4] = el)}>
+        <div className="section-container">
           <h2>Our Focus Areas</h2>
-          <p className="section-subtitle">
+          <p className="detail-section-subtitle">
             Through Project Nari Tarang, we create lasting change for women and girls
           </p>
-          <div className="womens-focus-grid">
+          <div className="detail-mission-grid detail-mission-grid-6">
             {focusAreas.map((m, i) => (
-              <div key={i} className="womens-focus-card">
-                <div className="womens-focus-icon">{String(i + 1).padStart(2, "0")}</div>
+              <div key={i} className="detail-mission-card glass">
+                <div className="detail-mission-num">{String(i + 1).padStart(2, "0")}</div>
                 <h3>{m.title}</h3>
                 <p>{m.desc}</p>
               </div>
@@ -119,10 +129,11 @@ export default function WomenEmpowerment() {
         </div>
       </section>
 
-      <section className="womens-impact" ref={(el) => (sectionRefs.current[5] = el)}>
-        <div className="container">
-          <div className="womens-impact-content">
-            <span className="section-tag">OUR IMPACT</span>
+      {/* IMPACT */}
+      <section className="detail-impact" ref={(el) => (sectionRefs.current[5] = el)}>
+        <div className="section-container">
+          <div className="detail-impact-content">
+            <span className="detail-section-tag">OUR IMPACT</span>
             <h2>Transforming Lives, Building Futures</h2>
             <p>
               Through Project Nari Tarang, we have witnessed the transformation of countless women.
@@ -139,36 +150,38 @@ export default function WomenEmpowerment() {
         </div>
       </section>
 
-      <section className="womens-stats" ref={(el) => (sectionRefs.current[6] = el)}>
-        <div className="womens-stats-grid">
-          <div className="womens-stat">
-            <span className="womens-stat-number">500+</span>
-            <span className="womens-stat-label">Women Empowered</span>
+      {/* STATS */}
+      <section className="detail-stats" ref={(el) => (sectionRefs.current[6] = el)}>
+        <div className="detail-stats-grid">
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">500+</span>
+            <span className="detail-stat-label">Women Empowered</span>
           </div>
-          <div className="womens-stat">
-            <span className="womens-stat-number">200+</span>
-            <span className="womens-stat-label">Girls Educated</span>
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">200+</span>
+            <span className="detail-stat-label">Girls Educated</span>
           </div>
-          <div className="womens-stat">
-            <span className="womens-stat-number">100+</span>
-            <span className="womens-stat-label">Businesses Started</span>
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">100+</span>
+            <span className="detail-stat-label">Businesses Started</span>
           </div>
-          <div className="womens-stat">
-            <span className="womens-stat-number">24/7</span>
-            <span className="womens-stat-label">Community Support</span>
+          <div className="detail-stat glass">
+            <span className="detail-stat-number">24/7</span>
+            <span className="detail-stat-label">Community Support</span>
           </div>
         </div>
       </section>
 
-      <section className="womens-gallery" ref={(el) => (sectionRefs.current[7] = el)}>
-        <div className="container">
+      {/* GALLERY */}
+      <section className="detail-gallery" ref={(el) => (sectionRefs.current[7] = el)}>
+        <div className="section-container">
           <h2>Moments of Empowerment</h2>
-          <p className="section-subtitle">Every story of empowerment inspires a brighter tomorrow</p>
-          <div className="womens-gallery-grid">
+          <p className="detail-section-subtitle">Every story of empowerment inspires a brighter tomorrow</p>
+          <div className="detail-gallery-grid">
             {galleryImages.map((img) => (
-              <div key={img.id} className="womens-gallery-item">
+              <div key={img.id} className="detail-gallery-item glass">
                 <img src={img.src} alt={img.alt} />
-                <div className="womens-gallery-overlay">
+                <div className="detail-gallery-overlay">
                   <span>{img.alt}</span>
                 </div>
               </div>
@@ -177,7 +190,17 @@ export default function WomenEmpowerment() {
         </div>
       </section>
 
-      
+      {/* CTA */}
+      <section className="detail-cta">
+        <div className="section-container">
+          <h2>Support Our Mission</h2>
+          <p>Your support can help us empower more women and build a more equitable society.</p>
+          <div className="detail-cta-btns">
+            <Link to="/donate" className="btn-primary-glass">Donate Now</Link>
+            <Link to="/volunteer" className="btn-secondary-glass">Become a Volunteer</Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

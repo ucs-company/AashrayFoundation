@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./About.css";
+import "./ManagementTeam.css";
 
 const teamMembers = [
   { id: 1, name: "Mr. Naresh Bhanushali", role: "President", photo: "/images/team/naresh-bhanushali.jpg" },
@@ -25,27 +25,33 @@ function ManagementTeam() {
   const [imgError, setImgError] = useState({});
 
   return (
-    <main className="page-about">
-      <section className="page-hero page-hero--team">
-        <div className="container">
-          <span className="hero-badge-pill">Board of Trustees</span>
-          <h1>Management Team</h1>
-          <p>Meet the dedicated individuals steering Ashray for Life Foundation toward a brighter future.</p>
+    <main className="management-page">
+      {/* HERO */}
+      <section className="management-hero">
+        <div className="management-hero-shape management-hero-shape--1" />
+        <div className="management-hero-shape management-hero-shape--2" />
+        <div className="section-container">
+          <div className="management-hero-content">
+            <span className="management-hero-badge glass">Board of Trustees</span>
+            <h1>Management Team</h1>
+            <p>Meet the dedicated individuals steering Ashray for Life Foundation toward a brighter future.</p>
+          </div>
         </div>
       </section>
 
-      <section className="team-section">
-        <div className="container">
-          <div className="section-heading">
-            <h2>Board of Trustees / Executive Committee</h2>
-            <p>The following individuals constitute the Board of Trustees and Executive Committee, entrusted with the governance, administration, strategic planning, and smooth functioning of the Trust.</p>
-          </div>
-          <div className="team-members-grid">
+      {/* TEAM */}
+      <section className="management-team">
+        <div className="section-container">
+          <h2>Board of Trustees / Executive Committee</h2>
+          <p className="management-subtitle">
+            The following individuals constitute the Board of Trustees and Executive Committee, entrusted with the governance, administration, strategic planning, and smooth functioning of the Trust.
+          </p>
+          <div className="management-grid">
             {teamMembers.map((member) => (
-              <div key={member.id} className="team-member-card">
-                <div className="team-member-photo">
+              <div key={member.id} className="management-card glass">
+                <div className="management-card-photo">
                   {imgError[member.id] ? (
-                    <div className="team-member-initials">{initials(member.name)}</div>
+                    <div className="management-card-initials">{initials(member.name)}</div>
                   ) : (
                     <img
                       src={member.photo}
@@ -54,9 +60,9 @@ function ManagementTeam() {
                     />
                   )}
                 </div>
-                <div className="team-member-info">
+                <div className="management-card-info">
                   <h3>{stripPrefix(member.name)}</h3>
-                  <span className="team-member-role">{member.role}</span>
+                  <span className="management-card-role">{member.role}</span>
                 </div>
               </div>
             ))}
