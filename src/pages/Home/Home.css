@@ -419,6 +419,15 @@
   color: #fff;
 }
 
+.glass-dark p {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.glass-dark h3,
+.glass-dark h4 {
+  color: #fff;
+}
+
 /* ===== PROJECTS ===== */
 .projects-section {
   padding: 80px 24px;
@@ -570,7 +579,7 @@
 
 /* ===== MISSION & VISION ===== */
 .mv-section {
-  padding: 80px 24px;
+  padding: 100px 24px;
   overflow: hidden;
   position: relative;
   background: #eff3ff;

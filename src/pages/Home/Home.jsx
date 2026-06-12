@@ -89,14 +89,14 @@ const allProjects = [
     title: "Zero Hunger Drive",
     desc: "Eradicating hunger through food distribution and nutrition programs.",
     tag: "Food & Nutrition",
-    image: "/images/ZeroHunger/img1.jpg",
+    image: "/images/ZeroHunger/img1.JPG",
   },
   {
     id: 3,
     title: "Project JAL",
     desc: "Clean water access for rural communities through conservation and filtration.",
     tag: "Clean Water",
-    image:  "/images/jal/img1.jpg",
+    image: "/images/jal/img1.JPG",
   },
   {
     id: 4,
@@ -243,6 +243,13 @@ function Home() {
                 </div>
                 <h4>Community</h4>
                 <p>Driven by 500+ dedicated volunteers nationwide.</p>
+              </div>
+              <div className="stat-feature-card glass">
+                <div className="feature-icon">
+                  <span className="material-symbol">monitoring</span>
+                </div>
+                <h4>Impact</h4>
+                <p>Measurable outcomes across 7 sectors with 100+ grassroots projects delivered.</p>
               </div>
             </div>
           </div>
