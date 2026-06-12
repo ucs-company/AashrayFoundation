@@ -8,17 +8,17 @@ function GalleryPage() {
   
     <main className="gallery-page">
 
-      {/* HERO IMAGE */}
+      HERO IMAGE
       <section className="gallery-new">
         <img
-          src="https://plca-p-001.sitecorecontenthub.cloud/api/public/content/fc15b34116194d608c4f78b888535473?v=911314f5"
+          src=""
           alt="Gallery-new"
         />
       </section>
 
       {/* PROJECT 1 */}
       <section className="gallery-content">
-        <h2>Vidhyalay</h2>
+        <h2>Vidhyalaya</h2>
 
           <div className="img-grid four">
           <div><img src="/images/gallery/vidhyalay1.jpg" /></div>
@@ -53,7 +53,7 @@ function GalleryPage() {
 
       {/* PROJECT 4 */}
       <section className="gallery-content">
-        <h2>Jal Project</h2>
+        <h2> Project Jal</h2>
 
         <div className="img-grid three">
           <div><img src="/images/gallery/jal1.jpg" /></div>
@@ -62,9 +62,9 @@ function GalleryPage() {
         </div>
       </section>
 
-
+       {/* PROJECT 5 */}
        <section className="gallery-content">
-        <h2>Sahara</h2>
+        <h2>Ashray Ka Aashram</h2>
 
           <div className="img-grid four">
           <div><img src="/images/gallery/sahara1.jpg" /></div>
@@ -76,9 +76,9 @@ function GalleryPage() {
 
 
 
-      {/* PROJECT 5 */}
+      {/* PROJECT 6 */}
       <section className="gallery-content">
-        <h2>Medical (Life-Line)</h2>
+        <h2>Sahara</h2>
 
         <div className="img-grid three">
           <div><img src="/images/gallery/medical1.jpg" /></div>
@@ -86,6 +86,36 @@ function GalleryPage() {
           <div><img src="/images/gallery/medical3.jpg" /></div>
         </div>
       </section>
+
+
+       {/* PROJECT 7 */}
+
+       <section className="gallery-content">
+        <h2>Ashray Ka Aashra</h2>
+
+          <div className="img-grid four">
+          <div><img src="/images/gallery/sahara1.jpg" /></div>
+          <div><img src="/images/gallery/sahara2.jpg" /></div>
+          <div><img src="/images/gallery/sahara3.jpg" /></div>
+          <div><img src="/images/gallery/sahara4.jpg" /></div>
+        </div>
+      </section>
+
+
+       {/* PROJECT 8 */}
+
+           <section className="gallery-content">
+        <h2>Pashu Premi</h2>
+
+        <div className="img-grid three">
+          <div><img src="/images/gallery/medical1.jpg" /></div>
+          <div><img src="/images/gallery/medical2.jpg" /></div>
+          <div><img src="/images/gallery/medical3.jpg" /></div>
+        </div>
+      </section>
+
+
+
 
     </main>
  
