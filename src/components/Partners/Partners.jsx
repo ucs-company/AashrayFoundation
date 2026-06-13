@@ -24,7 +24,7 @@ export default function Partners() {
       <div className="container">
         <h2>Our Partners</h2>
         <p className="partners-subtitle">
-          Trusted by organizations that believe in our mission
+          Trusted by organizations that believe in our mission.
         </p>
       </div>
 
