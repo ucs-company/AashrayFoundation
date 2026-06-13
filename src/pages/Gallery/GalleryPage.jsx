@@ -81,9 +81,9 @@ function GalleryPage() {
         <h2>Sahara</h2>
 
         <div className="img-grid three">
-          <div><img src="/images/gallery/medical1.jpg" /></div>
-          <div><img src="/images/gallery/medical2.jpg" /></div>
-          <div><img src="/images/gallery/medical3.jpg" /></div>
+          <div><img src="/images/gallery/img5.jpg" /></div>
+          <div><img src="/images/gallery/img4.jpg" /></div>
+          <div><img src="/images/gallery/img3.jpg" /></div>
         </div>
       </section>
 
@@ -108,9 +108,9 @@ function GalleryPage() {
         <h2>Pashu Premi</h2>
 
         <div className="img-grid three">
-          <div><img src="/images/Pashu/img1.jpg" /></div>
-          <div><img src="/images/Pashu/img2.jpg" /></div>
-          <div><img src="/images/Pashu/img3.jpg" /></div>
+          <div><img src="/images/gallery/pashu1.jpg" /></div>
+          <div><img src="/images/gallery/pashu2.jpg" /></div>
+          <div><img src="/images/gallery/pashu3.jpg" /></div>
         </div>
       </section>
 

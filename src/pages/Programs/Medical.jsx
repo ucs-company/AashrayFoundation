@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import "./Medical.css";
 
 const galleryImages = [
-  { id: 1, src: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=600&h=400&fit=crop", alt: "Medical care" },
-  { id: 2, src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&h=400&fit=crop", alt: "Surgery support" },
-  { id: 3, src: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&h=400&fit=crop", alt: "Hospital care" },
-  { id: 4, src: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=600&h=400&fit=crop", alt: "Child healthcare" },
-  { id: 5, src: "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=400&fit=crop", alt: "Medical treatment" },
-  { id: 6, src: "https://images.unsplash.com/photo-1530490124645-3e767e6bebb4?w=600&h=400&fit=crop", alt: "Hope and healing" },
+  { id: 1, src: "/images/Sahara/img1.jpg", alt: "Medical care" },
+  { id: 2, src: "/images/Sahara/img2.jpg", alt: "Surgery support" },
+  { id: 3, src: "/images/Sahara/img3.jpg", alt: "Hospital care" },
+  // { id: 4, src: "/images/Sahara/img4.jpg", alt: "Child healthcare" },
+  // { id: 5, src: "/images/Sahara/img5.jpg", alt: "Medical treatment" },
+  // { id: 6, src: "/images/Sahara/img6.jpg", alt: "Hope and healing" },
 ];
 
 const missions = [
@@ -49,7 +49,7 @@ export default function Medical() {
   }, []);
 
   return (
-    <div className="medical-page" style={{ '--hero-img': 'url(https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1200&h=600&fit=crop)' }}>
+    <div className="medical-page" style={{ '--hero-img': 'url(/images/Sahara/Sahara.jpg)' }}>
       {/* HERO */}
       <section className="detail-hero">
         <div className="detail-hero-shape detail-hero-shape--1" />
@@ -94,7 +94,7 @@ export default function Medical() {
             <div className="detail-intro-image">
               <div className="detail-image-frame glass">
                 <img
-                  src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=600&h=500&fit=crop"
+                  src="/images/Sahara/img4.jpg"
                   alt="Medical care"
                 />
               </div>

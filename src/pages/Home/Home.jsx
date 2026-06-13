@@ -33,7 +33,7 @@ const stories = [
     description:
       "Meet our longest-serving volunteer, Arun, who has dedicated his weekends for 5 years to ensuring the residents of Sahara never feel alone.",
     image:
-      "/images/Volunteers.jpg",
+      "/images/Volunteers3.jpg",
   },
 ];
 
