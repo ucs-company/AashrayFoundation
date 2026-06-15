@@ -89,7 +89,7 @@ const allProjects = [
     title: "Zero Hunger Drive",
     desc: "Eradicating hunger through food distribution and nutrition programs.",
     tag: "Food & Nutrition",
-    image: "/images/ZeroHunger/hunger2.jpg",
+    image: "/images/ZeroHunger/Hunger5.jpg",
   },
   {
     id: 3,

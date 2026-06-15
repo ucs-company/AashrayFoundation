@@ -3,14 +3,12 @@ import { Link } from "react-router-dom";
 import "./JalProject.css";
 
 const galleryImages = [
-  { id: 1, src: "/images/jal/img1.jpg", alt: "Clean Drinking Water" },
-  { id: 2, src: "/images/jal/img2.jpg", alt: "Water Purification" },
+  { id: 1, src: "/images/jal/imgjal1.jpg", alt: "Clean Drinking Water" },
+  { id: 2, src: "/images/jal/imgjal2.jpg", alt: "Water Purification" },
   { id: 3, src: "/images/jal/img3.jpg", alt: "Community Water Access" },
   { id: 4, src: "/images/jal/img4.jpg", alt: "Water Facility Installation" },
   { id: 5, src: "/images/jal/img5.jpg", alt: "Clean Water Distribution" },
-  { id: 6, src:
-    
-    "/images/jal/img6.jpg", alt: "Children Drinking Clean Water" },
+  { id: 6, src: "/images/jal/imgjal6.jpg", alt: "Children Drinking Clean Water" },
 ];
 
 const missions = [
@@ -97,7 +95,7 @@ export default function JalProject() {
             </div>
             <div className="detail-intro-image">
               <div className="detail-image-frame glass">
-                <img src="/images/jal/img1.jpg" alt="Clean Water" />
+                <img src="/images/jal/imgjal1.jpg" alt="Clean Water" />
               </div>
             </div>
           </div>
