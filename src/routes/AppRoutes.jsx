@@ -18,7 +18,6 @@ import OldAgeHome from '../pages/Programs/OldAgeHome';
 import PashuPremi from '../pages/Programs/PashuPremi';
 import MedicalSupport from '../pages/Appeals/AppealsMedical';
 import ContactUs from '../pages/Contact/Contact'
-import Donate from '../pages/Donate/Donate';
 // import Appealsfoodgrains from '../pages/Appeals/Appealsfoodgrains';
 // import Appealseducation from '../pages/Appeals/Appealseducation';
 
