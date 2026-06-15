@@ -1,21 +1,20 @@
 import "./Partners.css";
 
 const logos = [
-  { id: 1, src: "/images/partnerslogos/q1.jpg" },
-  { id: 2, src: "/images/partnerslogos/q2.jpg" },
-  { id: 3, src: "/images/partnerslogos/q3.jpg" },
-  { id: 4, src: "/images/partnerslogos/q4.jpg" },
-  { id: 5, src: "/images/partnerslogos/q5.jpg" },
-  { id: 6, src: "/images/partnerslogos/q6.jpg" },
-  { id: 7, src: "/images/partnerslogos/q7.jpg" },
-  { id: 8, src: "/images/partnerslogos/q8.jpg" },
-  { id: 9, src: "/images/partnerslogos/q9.jpg" },
-  { id: 10, src: "/images/partnerslogos/q10.jpg" },
-  { id: 11, src: "/images/partnerslogos/q11.jpg" },
-  { id: 12, src: "/images/partnerslogos/q12.jpg" },
-  { id: 13, src: "/images/partnerslogos/q13.jpg" },
-  { id: 14, src: "/images/partnerslogos/q14.jpg" },
-  { id: 15, src: "/images/partnerslogos/q15.jpg" },
+
+  { id: 3, src: "/images/partnerslogos/q23.jpg" },
+  { id: 4, src: "/images/partnerslogos/q24.jpg" },
+  { id: 5, src: "/images/partnerslogos/q25.jpg" },
+  { id: 6, src: "/images/partnerslogos/q26.jpg" },
+  { id: 7, src: "/images/partnerslogos/q27.jpg" },
+  { id: 8, src: "/images/partnerslogos/q28.jpg" },
+  { id: 9, src: "/images/partnerslogos/q29.jpg" },
+  { id: 10, src: "/images/partnerslogos/q30.jpg" },
+  { id: 11, src: "/images/partnerslogos/q31.jpg" },
+  { id: 12, src: "/images/partnerslogos/q32.jpg" },
+  { id: 13, src: "/images/partnerslogos/q33.jpg" },
+  { id: 14, src: "/images/partnerslogos/q34.jpg" },
+  { id: 15, src: "/images/partnerslogos/q35.jpg" },
 ];
 
 export default function Partners() {
