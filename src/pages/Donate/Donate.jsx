@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Donate.css";
 
-const RAZORPAY_TEST_KEY = "rzp_test_XXXXXXXXXXXXXXXX";
+const RAZORPAY_TEST_KEY = "rzp_live_T1vEMMkRqw3jrw";
 
 const causeIcons = {
   education: (
@@ -229,12 +229,12 @@ export default function Donate() {
   if (submitted) {
     return (
       <div className="donate-page">
-      <section className="bsct-home-hero-section">
+      {/* <section className="bsct-home-hero-section">
         <picture>
           <source media="(max-width: 768px)" srcSet="/images/banner-mobile7.png" />
           <img src="/images/banner.jpg" alt="Donate" />
         </picture>
-      </section>
+      </section> */}
       <section className="donate-hero">
         <div className="container">
           <h1>Donate</h1>
@@ -262,12 +262,12 @@ export default function Donate() {
 
   return (
     <div className="donate-page">
-      <section className="bsct-home-hero-section">
+      {/* <section className="bsct-home-hero-section">
         <picture>
           <source media="(max-width: 768px)" srcSet="/images/banner-mobile7.png" />
           <img src="/images/banner.jpg" alt="Donate" />
         </picture>
-      </section>
+      </section> */}
       <section className="donate-hero">
         <div className="container">
           <h1>Donate</h1>
