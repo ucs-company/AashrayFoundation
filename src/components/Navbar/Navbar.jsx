@@ -20,7 +20,7 @@ const navLinks = [
       { label: 'Nari Tarang', path: '/programs/women-empowerment' },
       { label: 'Zero Hunger Drive', path: '/programs/zero-hunger-drive' },
       { label: 'Project JAL', path: '/programs/jal-project' },
-      { label: 'Ashray Ka Aashra', path: '/programs/orphanage' },
+      { label: 'Ashray Ka Aashra', path: '/programs/orphanage'},
       
       { label: 'Sahara', path: '/programs/medical' },
       { label: 'Ashray Ka Aashram', path: '/programs/old-age-home' },
