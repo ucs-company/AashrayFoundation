@@ -18,6 +18,7 @@ import OldAgeHome from '../pages/Programs/OldAgeHome';
 import PashuPremi from '../pages/Programs/PashuPremi';
 import MedicalSupport from '../pages/Appeals/AppealsMedical';
 import ContactUs from '../pages/Contact/Contact'
+import Donate from '../pages/Donate/Donate';
 // import Appealsfoodgrains from '../pages/Appeals/Appealsfoodgrains';
 // import Appealseducation from '../pages/Appeals/Appealseducation';
 
@@ -29,6 +30,7 @@ function AppRoutes() {
       <Route path="/about/management-team" element={<ManagementTeam />} />
       <Route path="/about/legal-documents" element={<LegalDocuments />} />
       <Route path="/ContactUs" element={<ContactUs />} />
+      <Route path="/donate" element={<Donate />} />
 
       <Route path="/programs" element={<Programs />} />
       <Route path="/programs/medical" element={<Medical />} />
