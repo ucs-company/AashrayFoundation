@@ -25,6 +25,12 @@ function ManagementTeam() {
 
   return (
     <main className="management-page">
+      <section className="bsct-home-hero-section">
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/images/banner-mobile2.png" />
+          <img src="/images/banner.jpg" alt="Management Team" />
+        </picture>
+      </section>
       {/* HERO */}
       {/* <section className="management-hero">
         <div className="management-hero-shape management-hero-shape--1" />

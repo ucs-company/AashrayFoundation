@@ -92,6 +92,12 @@ function LegalDocuments() {
 
   return (
     <main className="legal-page">
+      <section className="bsct-home-hero-section">
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/images/banner-mobile3.png" />
+          <img src="/images/banner.jpg" alt="Legal Documents" />
+        </picture>
+      </section>
       {/* HERO */}
       {/* <section className="legal-hero">
         <div className="legal-hero-shape legal-hero-shape--1" />

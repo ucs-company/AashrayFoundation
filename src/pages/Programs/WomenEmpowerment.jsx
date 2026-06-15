@@ -64,6 +64,10 @@ export default function WomenEmpowerment() {
     <div className="womens-page" style={{ '--hero-img': 'url(/images/NariTarang/naariiiii.jpg)' }}>
       {/* HERO */}
       <section className="detail-hero">
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/images/banner-mobile1.png" />
+          <img src="/images/NariTarang/naariiiii.jpg" alt="Women Empowerment" />
+        </picture>
         <div className="detail-hero-shape detail-hero-shape--1" />
         <div className="detail-hero-shape detail-hero-shape--2" />
         <div className="section-container">

@@ -229,12 +229,18 @@ export default function Donate() {
   if (submitted) {
     return (
       <div className="donate-page">
-        <section className="donate-hero">
-          <div className="container">
-            <h1>Donate</h1>
-            <p>Your generosity makes our work possible. Thank you!</p>
-          </div>
-        </section>
+      <section className="bsct-home-hero-section">
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/images/banner-mobile7.png" />
+          <img src="/images/banner.jpg" alt="Donate" />
+        </picture>
+      </section>
+      <section className="donate-hero">
+        <div className="container">
+          <h1>Donate</h1>
+          <p>Your generosity makes our work possible. Thank you!</p>
+        </div>
+      </section>
         <section className="container">
           <div className="donate-success">
             <div className="donate-success-icon">
@@ -256,6 +262,12 @@ export default function Donate() {
 
   return (
     <div className="donate-page">
+      <section className="bsct-home-hero-section">
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/images/banner-mobile7.png" />
+          <img src="/images/banner.jpg" alt="Donate" />
+        </picture>
+      </section>
       <section className="donate-hero">
         <div className="container">
           <h1>Donate</h1>

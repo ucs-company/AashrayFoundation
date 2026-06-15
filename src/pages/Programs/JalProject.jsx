@@ -52,6 +52,10 @@ export default function JalProject() {
     <div className="jal-page" style={{ '--hero-img': 'url(/images/jal/jal.jpg)' }}>
       {/* HERO */}
       <section className="detail-hero">
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/images/banner-mobile2.png" />
+          <img src="/images/jal/jal.jpg" alt="Project Jal" />
+        </picture>
         <div className="detail-hero-shape detail-hero-shape--1" />
         <div className="detail-hero-shape detail-hero-shape--2" />
         <div className="section-container">

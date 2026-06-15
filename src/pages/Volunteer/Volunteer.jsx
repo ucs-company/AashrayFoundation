@@ -80,6 +80,12 @@ export default function Volunteer() {
 
   return (
     <main className="volunteer-page">
+      <section className="bsct-home-hero-section">
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/images/banner-mobile8.png" />
+          <img src="/images/banner.jpg" alt="Volunteer" />
+        </picture>
+      </section>
       {/* HERO
       <section className="detail-hero volunteer-hero">
         <div className="detail-hero-shape detail-hero-shape--1" />

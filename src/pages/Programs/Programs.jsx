@@ -96,6 +96,12 @@ function Programs() {
 
   return (
     <main className="programs-page">
+      <section className="bsct-home-hero-section">
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/images/banner-mobile4.png" />
+          <img src="/images/banner.jpg" alt="Our Programs" />
+        </picture>
+      </section>
       {/* HERO */}
       <section className="prog-hero">
         <div className="prog-hero-shape prog-hero-shape--1" />

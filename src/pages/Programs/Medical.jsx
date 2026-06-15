@@ -52,6 +52,10 @@ export default function Medical() {
     <div className="medical-page" style={{ '--hero-img': 'url(/images/Sahara/Sahara.jpg)' }}>
       {/* HERO */}
       <section className="detail-hero">
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/images/banner-mobile4.png" />
+          <img src="/images/Sahara/Sahara.jpg" alt="Project Life-Line" />
+        </picture>
         <div className="detail-hero-shape detail-hero-shape--1" />
         <div className="detail-hero-shape detail-hero-shape--2" />
         <div className="section-container">

@@ -52,6 +52,10 @@ export default function HungerDrive() {
     <div className="hunger-page" style={{ '--hero-img': 'url(/images/ZeroHunger/Hunger.jpg)' }}>
       {/* HERO */}
       <section className="detail-hero">
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/images/banner-mobile6.png" />
+          <img src="/images/ZeroHunger/Hunger.jpg" alt="Zero Hunger Drive" />
+        </picture>
         <div className="detail-hero-shape detail-hero-shape--1" />
         <div className="detail-hero-shape detail-hero-shape--2" />
         <div className="section-container">

@@ -14,6 +14,12 @@ const sectors = [
 function About() {
   return (
     <main className="page-about">
+      <section className="bsct-home-hero-section">
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/images/banner-mobile1.png" />
+          <img src="/images/banner.jpg" alt="About Us" />
+        </picture>
+      </section>
       {/* HERO */}
       <section className="about-hero">
         <div className="about-hero-shape about-hero-shape--1" />

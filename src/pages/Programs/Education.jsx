@@ -48,10 +48,14 @@ export default function Education() {
     return () => observer.disconnect();
   }, []);
 
-  return (
-    <div className="education-page" style={{ '--hero-img': 'url(/images/education/Educationhome.jpg)' }}>
+  return ( <div className="education-page" style={{ '--hero-img': 'url(/images/education/Educationhome.jpg)' }}>
+   
       {/* HERO */}
       <section className="detail-hero">
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/images/banner-mobile3.png" />
+          <img src="/images/education/Educationhome.jpg" alt="Education for All" />
+        </picture>
         <div className="detail-hero-shape detail-hero-shape--1" />
         <div className="detail-hero-shape detail-hero-shape--2" />
         <div className="section-container">

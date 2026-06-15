@@ -7,6 +7,13 @@ function GalleryPage() {
 
   
     <main className="gallery-page">
+      <section className="bsct-home-hero-section">
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/images/banner-mobile6.png" />
+          <img src="/images/banner.jpg" alt="Gallery" />
+        </picture>
+      </section>
+
 {/* 
       HERO IMAGE
       <section className="gallery-new">

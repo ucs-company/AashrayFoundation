@@ -60,6 +60,10 @@ export default function PashuPremi() {
     <div className="pashu-page" style={{ '--hero-img': 'url(/images/Pashu/pashu.jpg)' }}>
       {/* HERO */}
       <section className="detail-hero">
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/images/banner-mobile5.png" />
+          <img src="/images/Pashu/pashu.jpg" alt="Project Pashu Premi" />
+        </picture>
         <div className="detail-hero-shape detail-hero-shape--1" />
         <div className="detail-hero-shape detail-hero-shape--2" />
         <div className="section-container">

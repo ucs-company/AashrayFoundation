@@ -159,10 +159,17 @@ function Home() {
   return (
     <>
 
-
 <section className="bsct-home-hero-section">
-  <img src="/images/banner.jpg" 
-    alt=""/>
+  <picture>
+    <source
+      media="(max-width: 768px)"
+      srcSet="/images/banner-mobile.jpeg"
+    />
+    <img
+      src="/images/banner.jpg" 
+      alt="BSCT Banner"
+    />
+  </picture>
 </section>
 
       {/* ===== HERO ===== */}

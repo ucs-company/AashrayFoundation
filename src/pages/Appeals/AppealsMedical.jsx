@@ -27,6 +27,12 @@ const cases = [
 const MedicalSupport = () => {
   return (
     <div className="medical-page">
+      <section className="bsct-home-hero-section">
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/images/banner-mobile5.png" />
+          <img src="/images/banner.jpg" alt="Medical Appeals" />
+        </picture>
+      </section>
 
       {/* HERO SECTION */}
       <section className="medical-hero">

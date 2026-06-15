@@ -53,6 +53,10 @@ export default function Orphanage() {
     <div className="orphanage-page" style={{ '--hero-img': 'url("/images/AKA.jpg")' }}>
       {/* HERO */}
       <section className="detail-hero">
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/images/banner-mobile7.png" />
+          <img src="/images/AKA.jpg" alt="Project Ashra" />
+        </picture>
         <div className="detail-hero-shape detail-hero-shape--1" />
         <div className="detail-hero-shape detail-hero-shape--2" />
         <div className="section-container">
