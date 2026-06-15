@@ -15,7 +15,6 @@ const logos = [
   { id: 12, src: "/images/partnerslogos/q12.jpg" },
   { id: 13, src: "/images/partnerslogos/q13.jpg" },
   { id: 14, src: "/images/partnerslogos/q14.jpg" },
-  
   { id: 15, src: "/images/partnerslogos/q15.jpg" },
 ];
 
