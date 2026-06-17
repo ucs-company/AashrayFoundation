@@ -12,12 +12,12 @@ export default function Contact() {
   return (
     <div className="contact-page">
       {/* HERO */}
-      <section className="bsct-home-hero-section">
+      {/* <section className="bsct-home-hero-section">
         <picture>
           <source media="(max-width: 768px)" srcSet="/images/banner-mobile1.png" />
           <img src="/images/banner.jpg" alt="Contact Us" />
         </picture>
-      </section>
+      </section> */}
       <section className="contact-hero">
         <div className="contact-hero-shape contact-hero-shape--1" />
         <div className="contact-hero-shape contact-hero-shape--2" />

@@ -7,7 +7,7 @@
 /* ===== HERO ===== */
 .contact-hero {
   position: relative;
-  padding: 140px 24px 60px;
+  padding: 30px 24px 40px;
   overflow: hidden;
   background: #eff3ff;
 }
@@ -267,7 +267,7 @@
 }
 
 @media (max-width: 768px) {
-  .contact-hero { padding: 120px 16px 40px; }
+  .contact-hero { padding: 60px 16px 30px; }
   .contact-hero-content h1 { font-size: 36px; }
   .contact-hero-content p { font-size: 15px; }
   .contact-main { padding: 20px 0 60px; }

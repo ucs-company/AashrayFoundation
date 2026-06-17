@@ -173,6 +173,7 @@
 }
 
 .detail-impact-content p {
+  text-align: left;
   font-size: 16px;
   line-height: 1.9;
   color: #464651;

@@ -75,7 +75,7 @@ export default function OldAgeHome() {
           <div className="detail-intro-grid">
             <div className="detail-intro-text">
               <span className="detail-section-tag">WELCOME TO</span>
-              <h2>Project Sahara</h2>
+              <h2>Project Ashray Ka Aashram </h2>
               <p>
                 At <strong>AFLF (Ashray for Life Foundation)</strong>, we are dedicated to a
                 cause that transcends age, but centers on the invaluable wisdom and experience
@@ -128,7 +128,7 @@ export default function OldAgeHome() {
             <h2>Giving Seniors the Dignity They Deserve</h2>
             <p>
               For many elderly individuals, old-age homes are their haven. Through Project
-              Sahara, we provide essential support, companionship, and a sense of belonging.
+              Ashray Ka Aashram , we provide essential support, companionship, and a sense of belonging.
               Our regular visits, food grain distributions, and festive celebrations bring
               warmth and joy to their golden years.
             </p>

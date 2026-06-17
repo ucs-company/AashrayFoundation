@@ -76,7 +76,7 @@ export default function Orphanage() {
           <div className="detail-intro-grid">
             <div className="detail-intro-text">
               <span className="detail-section-tag">WELCOME TO</span>
-              <h2>Project Ashra</h2>
+              <h2>Project Ashray Ka Aashra</h2>
               <p>
                 The <strong>AFLF (Ashray for Life Foundation)</strong>, also recognized as
                 <strong> "Ashray Ka Aashra from Malad,"</strong> serves as a haven of free

@@ -532,6 +532,8 @@
 
 .projects-grid {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 24px;
   overflow: hidden;
   padding: 16px 0;
@@ -539,6 +541,8 @@
 
 .projects-track {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 24px;
   animation: causesScroll 30s linear infinite;
 }
@@ -552,9 +556,7 @@
   flex: 0 0 320px;
 }
 
-.project-card-wrapper.offset-top {
-  padding-top: 48px;
-}
+
 
 @keyframes causesScroll {
   0% {
@@ -1217,18 +1219,20 @@
 
   .projects-grid {
     gap: 16px;
+    flex-wrap: nowrap;
+    flex-direction: row;
   }
 
   .projects-track {
     gap: 16px;
+    flex-wrap: nowrap;
+    flex-direction: row;
   }
 
   .project-card-wrapper {
     flex: 0 0 260px;
-  }
-
-  .project-card-wrapper.offset-top {
-    padding-top: 24px;
+    width: 260px;
+    min-width: 260px;
   }
 
   .project-card-image {
@@ -1247,7 +1251,7 @@
   }
 
   .mv-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 24px;
   }
 
@@ -1302,10 +1306,12 @@
 @media (max-width: 480px) {
   .projects-grid {
     gap: 12px;
+    flex-wrap: nowrap;
   }
 
   .projects-track {
     gap: 12px;
+    flex-wrap: nowrap;
   }
 
   .project-card-wrapper {

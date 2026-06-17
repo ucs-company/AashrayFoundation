@@ -256,3 +256,19 @@
 .gallery-content:nth-child(5) { animation-delay: 0.4s; }
 .gallery-content:nth-child(6) { animation-delay: 0.5s; }
 .gallery-content:nth-child(7) { animation-delay: 0.6s; }
+
+/* ===== MOBILE: EK IMAGE EK LINE ME ===== */
+@media (max-width: 768px) {
+  .img-grid.four,
+  .img-grid.three {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .img-grid.four {
+    grid-template-rows: auto;
+  }
+  .img-grid.four img,
+  .img-grid.three img {
+    height: 240px;
+  }
+}

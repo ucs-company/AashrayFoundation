@@ -279,7 +279,7 @@ function Home() {
           <div className="projects-grid">
             <div className="projects-track">
               {[...projects, ...projects].map((project, i) => (
-                <div key={`${project.id}-${i}`} className={`project-card-wrapper ${i % 2 === 0 ? "offset-top" : ""}`}>
+                <div key={`${project.id}-${i}`} className="project-card-wrapper">
                   <div className="project-card glass">
                     <div className="project-card-image">
                       <img src={project.image} alt={project.title} />

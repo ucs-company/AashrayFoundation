@@ -117,7 +117,7 @@ export default function PashuPremi() {
           <p className="detail-section-subtitle">
             Dedicated to creating a safer and more compassionate world for animals
           </p>
-          <div className="detail-mission-grid" style={{ gridTemplateColumns: "repeat(3, 1fr)" }}>
+          <div className="detail-mission-grid">
             {missions.map((m, i) => (
               <div key={i} className="detail-mission-card glass">
                 <div className="detail-mission-num">{String(i + 1).padStart(2, "0")}</div>
