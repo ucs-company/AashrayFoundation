@@ -92,7 +92,7 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h3>Account Details</h3>
+                  <h3> Bank Details</h3>
                   <p>
                     <strong>Account Name:</strong> Ashray For Life Foundation<br />
                     <strong>Bank:</strong> Axis Bank (Malad-West)<br />
