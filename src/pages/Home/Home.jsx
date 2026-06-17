@@ -328,11 +328,6 @@ function Home() {
         <div className="section-container">
           <div className="involved-grid">
             <div className="involved-image-col">
-              <img
-                src="/images/Volunteers.jpg"
-                alt="Volunteers"
-                className="involved-img-back"
-              />
               <div className="involved-card glass">
                 <h3>Get Involved</h3>
                 <p>Lend your skills and time to make a tangible difference in the lives of many. We have opportunities in field work, administration, and digital support.</p>
@@ -341,6 +336,11 @@ function Home() {
                   <span className="material-symbol">person_add</span>
                 </Link>
               </div>
+              <img
+                src="/images/Volunteers.jpg"
+                alt="Volunteers"
+                className="involved-img-back"
+              />
             </div>
             <div className="involved-form-col">
               <div className="involved-form-card glass">
