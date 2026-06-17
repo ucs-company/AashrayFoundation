@@ -292,7 +292,7 @@
 
 /* ===== STATS ===== */
 .stats-section {
-  padding: 80px 24px;
+  padding: 0px 24px;
   overflow: hidden;
   position: relative;
   background: #eff3ff;
@@ -824,7 +824,7 @@
 
 /* ===== STORIES ===== */
 .stories-section {
-  padding: 80px 24px;
+  padding: 20px 24px;
   background: rgba(255, 255, 255, 0.3);
 }
 
@@ -833,7 +833,7 @@
   font-size: 48px;
   color: #2e2c8a;
   text-align: center;
-  margin-bottom: 96px;
+  margin-bottom: 26px;
 }
 
 .stories-grid-new {
