@@ -54,7 +54,7 @@ export default function OldAgeHome() {
       <section className="detail-hero">
         <picture>
           <source media="(max-width: 768px)" srcSet="/images/banner-mobile8.png" />
-          <img src="/images/oldage/oldage.jpg" alt="Old Age Home" />
+          <img src="/images/oldage.jpg" alt="" />
         </picture>
         <div className="detail-hero-shape detail-hero-shape--1" />
         <div className="detail-hero-shape detail-hero-shape--2" />
