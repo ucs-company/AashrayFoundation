@@ -22,14 +22,15 @@
   background: #2e2c8a;
   color: #fff;
   margin-left: 12px;
-  padding: 11px 26px;
+  padding: 5px 16px;
   border-radius: 50px;
   letter-spacing: 0.3px;
   position: relative;
   overflow: hidden;
   z-index: 1;
-  border: none;
+  border: 1.5px solid #fff;
   box-shadow: 0 4px 14px rgba(46,44,138,0.25);
+  transition: all 0.3s ease;
 }
 
 .btn-donate::before {
@@ -45,7 +46,7 @@
 
 .btn-donate:hover {
   background: #3d3a9e;
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(46,44,138,0.4);
 }
 

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import galleryData from "../../data/galleryData";
 import Partners from "../../components/Partners/Partners";
+
 import "./Home.css";
 
 const stories = [
@@ -143,16 +144,20 @@ function Home() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
+        entries.forEach((entry, i) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("animate-in");
+            if (entry.target.classList.contains("reveal")) {
+              setTimeout(() => entry.target.classList.add("visible"), i * 100);
+            } else {
+              entry.target.classList.add("animate-in");
+            }
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.15 }
     );
 
-    document.querySelectorAll(".observe-fade").forEach((el) => observer.observe(el));
+    document.querySelectorAll(".observe-fade, .reveal").forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, []);
 
@@ -296,34 +301,49 @@ function Home() {
       </section>
 
       {/* ===== MISSION & VISION ===== */}
-      <section className="mv-section">
-        <div className="mv-bg-glow" />
-        <div className="section-container">
-          <div className="mv-grid">
-            <div className="mv-card-dark glass-dark">
-              <div className="mv-card-glow" />
-              <div className="mv-icon-wrap">
-                <span className="material-symbol">track_changes</span>
+      <section className="mv-section-new">
+        <div className="mv-bg-new"></div>
+        <div className="mv-overlay-new"></div>
+        <div className="mv-glow-new mv-glow-new-1"></div>
+        <div className="mv-glow-new mv-glow-new-2"></div>
+        <div className="mv-container-new">
+          <div>
+            <h2 className="mv-heading-new">
+              <span className="mv-heading-white">Our Mission &amp; </span>
+              <span className="mv-heading-sun">Our Vision</span>
+            </h2>
+            <div className="mv-blocks-new">
+              <div className="reveal">
+                <div className="mv-icon-new">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M9 12l2 2 4-4M12 21a9 9 0 110-18 9 9 0 010 18z" />
+                  </svg>
+                </div>
+                <h3 className="mv-block-title-new">Our Mission</h3>
+                <p className="mv-block-text-new">
+                  To create a Just, Equitable and Humane Society through holistic and sustainable interventions in the seven key sectors of social development.
+                </p>
               </div>
-              <h2 className="mv-card-title">Our Mission</h2>
-              <p className="mv-card-desc">
-                To create a Just, Equitable and Humane Society through holistic and sustainable interventions in the seven key sectors of social development.
-              </p>
-            </div>
-            <div className="mv-card-dark glass-dark">
-              <div className="mv-icon-wrap">
-                <span className="material-symbol fill">visibility</span>
+              <div className="reveal">
+                <div className="mv-icon-new">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M9 12l2 2 4-4M12 21a9 9 0 110-18 9 9 0 010 18z" />
+                  </svg>
+                </div>
+                <h3 className="mv-block-title-new">Our Vision</h3>
+                <p className="mv-block-text-new">
+                  To build a self-reliant society where every individual, regardless of their socio-economic status, has access to basic necessities and opportunities for a dignified life.
+                </p>
               </div>
-              <h2 className="mv-card-title">Our Vision</h2>
-              <p className="mv-card-desc">
-                To build a self-reliant society where every individual, regardless of their socio-economic status, has access to basic necessities and opportunities for a dignified life.
-              </p>
             </div>
+          </div>
+          <div className="reveal mv-image-wrap-new">
+            <img src="/images/Volunteers1.jpg" alt="Our mission in action" />
           </div>
         </div>
       </section>
 
-      {/* ===== GET INVOLVED ===== */}
+      {/* =====  GET INVOLVED ===== */}
       <section className="involved-section">
         <div className="section-container">
           <div className="involved-grid">
@@ -363,7 +383,7 @@ function Home() {
           <h2 className="stories-main-title">Stories of Change</h2>
           <div className="stories-grid-new">
             {stories.map((story, i) => (
-              <article key={story.id} className={`story-article ${i === 1 ? "story-offset" : ""}`}>
+              <article key={story.id} className="story-article">
                 <div className="story-image-wrap asymmetric-card">
                   <img src={story.image} alt={story.title} />
                   <div className="story-image-overlay" />
@@ -383,7 +403,54 @@ function Home() {
       </section>
 
       {/* ===== TESTIMONIALS ===== */}
-      <section className="testimonials-section">
+
+
+{/* ===== TESTIMONIALS ===== */}
+<section className="tm-section">
+  {/* ambient glows */}
+  <div className="tm-glow tm-glow--1" />
+  <div className="tm-glow tm-glow--2" />
+
+  <div className="section-container">
+    <div className="tm-header">
+      <span className="tm-eyebrow">Stories of impact</span>
+      <h2 className="tm-title">Voices of Hope</h2>
+      <p className="tm-subtitle">
+        Real people, real change — words from the community we serve and the
+        hands that help us grow.
+      </p>
+    </div>
+
+    <div className="tm-grid">
+      {testimonials.map((t, i) => (
+        <article
+          key={t.id}
+          className={`tm-card tm-card--${t.color}`}
+          style={{ "--i": i }}
+        >
+          <div className="tm-quote-mark" aria-hidden="true">"</div>
+
+          <p className="tm-quote">{t.quote}</p>
+
+          <div className="tm-author">
+            <div className="tm-avatar">{t.initials}</div>
+            <div className="tm-author-info">
+              <h4 className="tm-name">{t.name}</h4>
+              <p className="tm-role">{t.role}</p>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+      {/* <section className="testimonials-section">
         <div className="testimonials-glow" />
         <div className="section-container">
           <div className="testimonials-header">
@@ -410,7 +477,7 @@ function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ===== NEWSLETTER ===== */}
       <section className="newsletter glass">
