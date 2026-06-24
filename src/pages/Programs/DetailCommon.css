@@ -76,6 +76,7 @@
 .detail-image-frame {
   padding: 12px;
   border-radius: 25px;
+  transition: border-color 0.3s ease;
 }
 
 .detail-image-frame img {
@@ -85,6 +86,10 @@
   border-radius: 25px;
   display: block;
   transition: transform 0.5s ease;
+}
+
+.detail-image-frame:hover {
+  border-color: rgba(46, 44, 138, 0.25);
 }
 
 .detail-image-frame:hover img {
@@ -120,6 +125,7 @@
 .detail-mission-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 50px rgba(63, 64, 149, 0.18);
+  border-color: rgba(46, 44, 138, 0.25);
 }
 
 .detail-mission-num {
@@ -205,6 +211,7 @@
 .detail-stat:hover {
   transform: translateY(-5px);
   box-shadow: 0 16px 40px rgba(63, 64, 149, 0.15);
+  border-color: rgba(46, 44, 138, 0.25);
 }
 
 .detail-stat-number {
@@ -248,6 +255,7 @@
   border-radius: 25px;
   cursor: pointer;
   padding: 8px;
+  transition: border-color 0.3s ease;
 }
 
 .detail-gallery-item img {
@@ -257,6 +265,10 @@
   border-radius: 25px;
   transition: transform 0.5s ease;
   display: block;
+}
+
+.detail-gallery-item:hover {
+  border-color: rgba(46, 44, 138, 0.25);
 }
 
 .detail-gallery-item:hover img {

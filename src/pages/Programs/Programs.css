@@ -110,6 +110,7 @@
 .prog-card-inner:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 50px rgba(63, 64, 149, 0.18);
+  border-color: rgba(46, 44, 138, 0.25);
 }
 
 .prog-card-image {
