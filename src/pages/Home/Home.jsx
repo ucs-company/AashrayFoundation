@@ -338,7 +338,7 @@ function Home() {
             </div>
           </div>
           <div className="reveal mv-image-wrap-new">
-            <img src="/images/Volunteers1.jpg" alt="Our mission in action" />
+            <img src="/images/mission-bg.jpg" alt="Our mission in action" />
           </div>
         </div>
       </section>
