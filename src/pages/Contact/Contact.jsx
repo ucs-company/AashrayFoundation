@@ -66,7 +66,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3>Phone</h3>
-                  <p>+91 22 1234 5678</p>
+                  <p>+91 9930028300</p>
                 </div>
               </div>
 
@@ -79,7 +79,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3>Email</h3>
-                  <p>info@ashrayforlife.org</p>
+                  <p>ashrayforlifefoundation@gmail.com</p>
                 </div>
               </div>
 
